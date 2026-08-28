@@ -1,0 +1,3573 @@
+from __future__ import annotations
+
+from pathlib import Path
+from typing import Any, Optional
+
+from PyQt5.QtCore import Qt, QTimer
+from PyQt5.QtGui import QColor
+from PyQt5.QtWidgets import (
+    QDialog,
+    QDialogButtonBox,
+    QFileDialog,
+    QFormLayout,
+    QFrame,
+    QHBoxLayout,
+    QLabel,
+    QLineEdit,
+    QListWidget,
+    QListWidgetItem,
+    QMessageBox,
+    QPushButton,
+    QScrollArea,
+    QSpinBox,
+    QSplitter,
+    QTextEdit,
+    QVBoxLayout,
+    QWidget,
+)
+
+from master.models import ScraperStatus
+from master.process_manager import ProcessManager
+
+from .controller import GUIController
+
+
+# ============================================================
+# EYE MASTER // PALETTE
+# ============================================================
+
+BG = "#120B18"
+
+SURFACE = "#1B1023"
+SURFACE_2 = "#23142D"
+SURFACE_3 = "#2C1936"
+
+BORDER = "#612E37"
+BORDER_SOFT = "#432632"
+
+TEXT = "#FFF7E6"
+TEXT_SECONDARY = "#D8C7C0"
+TEXT_MUTED = "#9C858D"
+
+AMBER = "#FED172"
+ORANGE = "#F3742B"
+DEEP_ORANGE = "#B83A14"
+
+BURGUNDY = "#612E37"
+PURPLE = "#231650"
+
+GREEN = "#72D6A3"
+BLUE = "#7EB6E6"
+RED = "#E56B5D"
+
+
+# ============================================================
+# DEFAULTS
+# ============================================================
+
+DEFAULT_PROVIDERS = (
+    "google",
+    "duckduckgo",
+    "balad",
+    "osm",
+)
+
+DEFAULT_KEYWORD_FILE = (
+    "categories/business_keywords.txt"
+)
+
+DEFAULT_MAX_QUERIES = 20
+DEFAULT_PAGES_PER_QUERY = 1
+DEFAULT_RESULTS_PER_PAGE = 100
+DEFAULT_DELAY = 0
+DEFAULT_TIMEOUT = 30
+
+
+# ============================================================
+# STATUS COLORS
+# ============================================================
+
+STATUS_COLORS = {
+    ScraperStatus.CREATED: TEXT_MUTED,
+    ScraperStatus.STARTING: AMBER,
+    ScraperStatus.RUNNING: GREEN,
+    ScraperStatus.STOPPING: AMBER,
+    ScraperStatus.STOPPED: TEXT_MUTED,
+    ScraperStatus.FINISHED: BLUE,
+    ScraperStatus.CRASHED: RED,
+    ScraperStatus.KILLED: RED,
+}
+
+
+# ============================================================
+# SAFE HELPERS
+# ============================================================
+
+def safe_status_color(status: Any) -> str:
+    return STATUS_COLORS.get(
+        status,
+        TEXT_SECONDARY,
+    )
+
+
+def safe_status_value(status: Any) -> str:
+    if status is None:
+        return "-"
+
+    value = getattr(
+        status,
+        "value",
+        status,
+    )
+
+    return str(value)
+
+
+def safe_get(
+    obj: Any,
+    name: str,
+    default: Any = None,
+) -> Any:
+    if obj is None:
+        return default
+
+    if isinstance(obj, dict):
+        return obj.get(
+            name,
+            default,
+        )
+
+    return getattr(
+        obj,
+        name,
+        default,
+    )
+
+
+def normalize_provider_name(
+    provider: Any,
+) -> str:
+
+    if provider is None:
+        return ""
+
+    if isinstance(provider, str):
+        return provider.strip()
+
+    if isinstance(provider, dict):
+        value = (
+            provider.get("name")
+            or provider.get("id")
+            or provider.get("key")
+        )
+
+        return str(
+            value or ""
+        ).strip()
+
+    value = getattr(
+        provider,
+        "name",
+        None,
+    )
+
+    if value:
+        return str(
+            value
+        ).strip()
+
+    return str(
+        provider
+    ).strip()
+
+
+# ============================================================
+# NEW SCRAPER DIALOG
+# ============================================================
+
+class NewScraperDialog(QDialog):
+
+    def __init__(
+        self,
+        parent: Optional[QWidget] = None,
+    ) -> None:
+
+        super().__init__(parent)
+
+        self.setWindowTitle(
+            "EYE // NEW SCRAPER"
+        )
+
+        self.setMinimumSize(
+            760,
+            780,
+        )
+
+        self.resize(
+            820,
+            900,
+        )
+
+        self._build_ui()
+        self._apply_style()
+
+        self.name_edit.textChanged.connect(
+            self._update_database_path
+        )
+
+    # ========================================================
+    # BUILD
+    # ========================================================
+
+    def _build_ui(self) -> None:
+
+        # ========================================================
+        # MASTER ROOT
+        # ========================================================
+
+        root = QFrame(self)
+
+        root.setObjectName(
+            "MasterRoot"
+        )
+
+        layout = QVBoxLayout(root)
+
+        layout.setContentsMargins(
+            0,
+            0,
+            0,
+            0,
+        )
+
+        layout.setSpacing(
+            14
+        )
+
+        # ========================================================
+        # HEADER
+        # ========================================================
+
+        header = QHBoxLayout()
+
+        title_box = QVBoxLayout()
+
+        title_box.setSpacing(
+            2
+        )
+
+        title = QLabel(
+            "EYE // MASTER"
+        )
+
+        title.setObjectName(
+            "MasterTitle"
+        )
+
+        subtitle = QLabel(
+            "SCRAPER ORCHESTRATION // BUSINESS INTELLIGENCE"
+        )
+
+        subtitle.setObjectName(
+            "MasterSubtitle"
+        )
+
+        title_box.addWidget(
+            title
+        )
+
+        title_box.addWidget(
+            subtitle
+        )
+
+        header.addLayout(
+            title_box
+        )
+
+        header.addStretch()
+
+        self.connection_label = QLabel(
+            "● MASTER ONLINE"
+        )
+
+        self.connection_label.setObjectName(
+            "Connection"
+        )
+
+        header.addWidget(
+            self.connection_label
+        )
+
+        layout.addLayout(
+            header
+        )
+
+        # ========================================================
+        # STATS
+        # ========================================================
+
+        stats = QHBoxLayout()
+
+        stats.setSpacing(
+            10
+        )
+
+        self.total_value = self._create_stat(
+            stats,
+            "TOTAL",
+            TEXT,
+        )
+
+        self.running_value = self._create_stat(
+            stats,
+            "RUNNING",
+            GREEN,
+        )
+
+        self.starting_value = self._create_stat(
+            stats,
+            "STARTING",
+            AMBER,
+        )
+
+        self.failed_value = self._create_stat(
+            stats,
+            "FAILED",
+            RED,
+        )
+
+        self.finished_value = self._create_stat(
+            stats,
+            "FINISHED",
+            BLUE,
+        )
+
+        layout.addLayout(
+            stats
+        )
+
+        # ========================================================
+        # MAIN SPLITTER
+        # ========================================================
+
+        splitter = QSplitter(
+            Qt.Horizontal
+        )
+
+        splitter.setChildrenCollapsible(
+            False
+        )
+
+        # ========================================================
+        # LEFT PANEL
+        # ========================================================
+
+        left = QFrame()
+
+        left.setObjectName(
+            "Panel"
+        )
+
+        left_layout = QVBoxLayout(left)
+
+        left_layout.setContentsMargins(
+            15,
+            15,
+            15,
+            15,
+        )
+
+        left_layout.setSpacing(
+            11
+        )
+
+        left_header = QHBoxLayout()
+
+        left_title = QLabel(
+            "SCRAPER PROCESSES"
+        )
+
+        left_title.setObjectName(
+            "SectionTitle"
+        )
+
+        left_header.addWidget(
+            left_title
+        )
+
+        left_header.addStretch()
+
+        self.new_scraper_button = QPushButton(
+            "＋ NEW"
+        )
+
+        self.new_scraper_button.setObjectName(
+            "PrimaryButton"
+        )
+
+        self.new_scraper_button.clicked.connect(
+            self._new_scraper
+        )
+
+        left_header.addWidget(
+            self.new_scraper_button
+        )
+
+        self.refresh_button = QPushButton(
+            "REFRESH"
+        )
+
+        self.refresh_button.clicked.connect(
+            self.refresh
+        )
+
+        left_header.addWidget(
+            self.refresh_button
+        )
+
+        left_layout.addLayout(
+            left_header
+        )
+
+        self.scraper_list = QListWidget()
+
+        self.scraper_list.setObjectName(
+            "ScraperList"
+        )
+
+        self.scraper_list.setSelectionMode(
+            QListWidget.SingleSelection
+        )
+
+        self.scraper_list.currentItemChanged.connect(
+            self._on_scraper_selected
+        )
+
+        left_layout.addWidget(
+            self.scraper_list,
+            1,
+        )
+
+        splitter.addWidget(
+            left
+        )
+
+        # ========================================================
+        # RIGHT PANEL
+        # ========================================================
+
+        right = QFrame()
+
+        right.setObjectName(
+            "Panel"
+        )
+
+        right_layout = QVBoxLayout(right)
+
+        right_layout.setContentsMargins(
+            18,
+            18,
+            18,
+            18,
+        )
+
+        right_layout.setSpacing(
+            12
+        )
+
+        # ========================================================
+        # DETAILS HEADER
+        # ========================================================
+
+        details_header = QHBoxLayout()
+
+        self.scraper_name = QLabel(
+            "NO SCRAPER SELECTED"
+        )
+
+        self.scraper_name.setObjectName(
+            "DetailsTitle"
+        )
+
+        details_header.addWidget(
+            self.scraper_name
+        )
+
+        details_header.addStretch()
+
+        self.status_label = QLabel(
+            "—"
+        )
+
+        self.status_label.setObjectName(
+            "Status"
+        )
+
+        details_header.addWidget(
+            self.status_label
+        )
+
+        right_layout.addLayout(
+            details_header
+        )
+
+        # ========================================================
+        # ACTIONS
+        # ========================================================
+
+        actions = QHBoxLayout()
+
+        self.start_button = QPushButton(
+            "▶ START"
+        )
+
+        self.stop_button = QPushButton(
+            "■ STOP"
+        )
+
+        self.restart_button = QPushButton(
+            "↻ RESTART"
+        )
+
+        self.kill_button = QPushButton(
+            "✕ KILL"
+        )
+
+        self.remove_button = QPushButton(
+            "REMOVE"
+        )
+
+        self.start_button.clicked.connect(
+            self._start_selected
+        )
+
+        self.stop_button.clicked.connect(
+            self._stop_selected
+        )
+
+        self.restart_button.clicked.connect(
+            self._restart_selected
+        )
+
+        self.kill_button.clicked.connect(
+            self._kill_selected
+        )
+
+        self.remove_button.clicked.connect(
+            self._remove_selected
+        )
+
+        actions.addWidget(
+            self.start_button
+        )
+
+        actions.addWidget(
+            self.stop_button
+        )
+
+        actions.addWidget(
+            self.restart_button
+        )
+
+        actions.addWidget(
+            self.kill_button
+        )
+
+        actions.addStretch()
+
+        actions.addWidget(
+            self.remove_button
+        )
+
+        right_layout.addLayout(
+            actions
+        )
+
+        # ========================================================
+        # KEYWORD WORKFLOW
+        # ========================================================
+
+        workflow = QFrame()
+
+        workflow.setObjectName(
+            "RuntimePanel"
+        )
+
+        workflow_layout = QVBoxLayout(
+            workflow
+        )
+
+        workflow_layout.setContentsMargins(
+            13,
+            11,
+            13,
+            11,
+        )
+
+        workflow_layout.setSpacing(
+            7
+        )
+
+        workflow_title = QLabel(
+            "KEYWORD WORKFLOW"
+        )
+
+        workflow_title.setObjectName(
+            "PanelTitle"
+        )
+
+        workflow_layout.addWidget(
+            workflow_title
+        )
+
+        self.keyword_file_value = QLabel(
+            "-"
+        )
+
+        self.province_value = QLabel(
+            "-"
+        )
+
+        self.city_value = QLabel(
+            "-"
+        )
+
+        self.workflow_mode_value = QLabel(
+            "-"
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "KEYWORD FILE",
+            self.keyword_file_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "PROVINCE",
+            self.province_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "CITY",
+            self.city_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "MODE",
+            self.workflow_mode_value,
+        )
+
+        right_layout.addWidget(
+            workflow
+        )
+
+        # ========================================================
+        # RUNTIME
+        # ========================================================
+
+        runtime = QFrame()
+
+        runtime.setObjectName(
+            "RuntimePanel"
+        )
+
+        runtime_layout = QVBoxLayout(
+            runtime
+        )
+
+        runtime_layout.setContentsMargins(
+            13,
+            11,
+            13,
+            11,
+        )
+
+        runtime_layout.setSpacing(
+            7
+        )
+
+        runtime_title = QLabel(
+            "RUNTIME"
+        )
+
+        runtime_title.setObjectName(
+            "PanelTitle"
+        )
+
+        runtime_layout.addWidget(
+            runtime_title
+        )
+
+        self.pid_value = QLabel("-")
+        self.provider_value = QLabel("-")
+        self.target_value = QLabel("-")
+        self.database_value = QLabel("-")
+        self.started_value = QLabel("-")
+        self.exit_value = QLabel("-")
+
+        self._runtime_row(
+            runtime_layout,
+            "PID",
+            self.pid_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "PROVIDERS",
+            self.provider_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "TARGET",
+            self.target_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "DATABASE",
+            self.database_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "STARTED",
+            self.started_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "EXIT CODE",
+            self.exit_value,
+        )
+
+        right_layout.addWidget(
+            runtime
+        )
+
+        # ========================================================
+        # CONFIGURATION
+        # ========================================================
+
+        config_title = QLabel(
+            "CONFIGURATION"
+        )
+
+        config_title.setObjectName(
+            "PanelTitle"
+        )
+
+        right_layout.addWidget(
+            config_title
+        )
+
+        self.config_view = QListWidget()
+
+        self.config_view.setObjectName(
+            "ConfigView"
+        )
+
+        self.config_view.setMaximumHeight(
+            145
+        )
+
+        right_layout.addWidget(
+            self.config_view
+        )
+
+        # ========================================================
+        # EVENT LOG
+        # ========================================================
+
+        log_title = QLabel(
+            "MASTER EVENT LOG"
+        )
+
+        log_title.setObjectName(
+            "PanelTitle"
+        )
+
+        right_layout.addWidget(
+            log_title
+        )
+
+        self.log_view = QListWidget()
+
+        self.log_view.setObjectName(
+            "LogView"
+        )
+
+        right_layout.addWidget(
+            self.log_view,
+            1,
+        )
+
+        # ========================================================
+        # SPLITTER
+        # ========================================================
+
+        splitter.addWidget(
+            right
+        )
+
+        splitter.setSizes([
+            430,
+            1050,
+        ])
+
+        # ========================================================
+        # ROOT LAYOUT
+        # ========================================================
+
+        layout.addWidget(
+            splitter,
+            1,
+        )
+
+        # ========================================================
+        # IMPORTANT:
+        #
+        # `layout` belongs to `root`.
+        # DO NOT call self.setLayout(layout).
+        #
+        # Instead put root inside a layout owned by self.
+        # ========================================================
+
+        window_layout = QVBoxLayout(
+            self
+        )
+
+        window_layout.setContentsMargins(
+            0,
+            0,
+            0,
+            0,
+        )
+
+        window_layout.setSpacing(
+            0
+        )
+
+        window_layout.addWidget(
+            root
+        )
+
+        # ========================================================
+        # INITIAL ACTION STATE
+        # ========================================================
+
+        self._set_action_state(
+            False
+        )
+    # ========================================================
+    # SECTION
+    # ========================================================
+
+    @staticmethod
+    def _create_section(
+        title: str,
+        subtitle: str,
+    ) -> QFrame:
+
+        frame = QFrame()
+
+        frame.setObjectName(
+            "ConfigSection"
+        )
+
+        layout = QVBoxLayout(frame)
+
+        layout.setContentsMargins(
+            16,
+            14,
+            16,
+            16,
+        )
+
+        layout.setSpacing(10)
+
+        title_label = QLabel(title)
+
+        title_label.setObjectName(
+            "SectionTitle"
+        )
+
+        subtitle_label = QLabel(subtitle)
+
+        subtitle_label.setObjectName(
+            "SectionSubtitle"
+        )
+
+        layout.addWidget(title_label)
+        layout.addWidget(subtitle_label)
+
+        return frame
+
+    # ========================================================
+    # INTEGER
+    # ========================================================
+
+    @staticmethod
+    def _integer(
+        minimum: int,
+        maximum: int,
+        default: int,
+    ) -> QSpinBox:
+
+        widget = QSpinBox()
+
+        widget.setRange(
+            minimum,
+            maximum,
+        )
+
+        widget.setValue(
+            default
+        )
+
+        widget.setButtonSymbols(
+            QSpinBox.PlusMinus
+        )
+
+        return widget
+
+    # ========================================================
+    # KEYWORD FILE
+    # ========================================================
+
+    def _browse_keyword_file(self) -> None:
+
+        directory = str(
+            Path(
+                self.keyword_file_edit.text().strip()
+                or DEFAULT_KEYWORD_FILE
+            ).parent
+        )
+
+        path, _ = QFileDialog.getOpenFileName(
+            self,
+            "SELECT KEYWORD FILE",
+            directory,
+            "Text Files (*.txt);;All Files (*)",
+        )
+
+        if not path:
+            return
+
+        self.keyword_file_edit.setText(path)
+
+        self._load_keyword_preview()
+
+    # ========================================================
+    # KEYWORD PREVIEW
+    # ========================================================
+
+    def _read_keywords(self) -> list[str]:
+
+        path = Path(
+            self.keyword_file_edit.text().strip()
+        )
+
+        if not path.is_file():
+            return []
+
+        keywords = []
+
+        try:
+
+            with path.open(
+                "r",
+                encoding="utf-8",
+            ) as file:
+
+                for raw_line in file:
+
+                    line = raw_line.strip()
+
+                    if not line:
+                        continue
+
+                    if line.startswith("#"):
+                        continue
+
+                    keywords.append(line)
+
+        except OSError:
+            return []
+
+        return keywords
+
+    def _load_keyword_preview(self) -> None:
+
+        self.keyword_preview.clear()
+
+        path = Path(
+            self.keyword_file_edit.text().strip()
+        )
+
+        if not path.is_file():
+
+            self.keyword_info.setText(
+                "⚠ KEYWORD FILE NOT FOUND"
+            )
+
+            self.keyword_info.setStyleSheet(
+                f"color: {RED};"
+            )
+
+            return
+
+        keywords = self._read_keywords()
+
+        self.keyword_info.setStyleSheet(
+            f"color: {GREEN};"
+        )
+
+        self.keyword_info.setText(
+            f"● {len(keywords)} KEYWORDS LOADED"
+        )
+
+        limit = 100
+
+        for index, keyword in enumerate(
+            keywords[:limit],
+            start=1,
+        ):
+
+            item = QListWidgetItem(
+                f"{index:03d}  //  {keyword}"
+            )
+
+            item.setData(
+                Qt.UserRole,
+                keyword,
+            )
+
+            self.keyword_preview.addItem(item)
+
+        if len(keywords) > limit:
+
+            self.keyword_preview.addItem(
+                f"... {len(keywords) - limit} MORE KEYWORDS"
+            )
+
+    # ========================================================
+    # DATABASE
+    # ========================================================
+
+    def _update_database_path(
+        self,
+        name: str,
+    ) -> None:
+
+        name = name.strip()
+
+        if not name:
+            return
+
+        current = self.database_edit.text().strip()
+
+        if (
+            current
+            and not current.startswith(
+                "runtime/databases/"
+            )
+        ):
+            return
+
+        self.database_edit.setText(
+            str(
+                Path("runtime")
+                / "databases"
+                / f"{name}.db"
+            )
+        )
+
+    # ========================================================
+    # PROVIDERS
+    # ========================================================
+
+    def _populate_providers(self) -> None:
+
+        providers: list[str] = []
+
+        try:
+
+            from providers.manager import ProviderManager
+
+            manager = ProviderManager()
+
+            candidates = []
+
+            # ----------------------------------------------
+            # list_providers()
+            # ----------------------------------------------
+
+            method = getattr(
+                manager,
+                "list_providers",
+                None,
+            )
+
+            if callable(method):
+
+                result = method()
+
+                if result:
+                    candidates = result
+
+            # ----------------------------------------------
+            # available_providers()
+            # ----------------------------------------------
+
+            if not candidates:
+
+                method = getattr(
+                    manager,
+                    "available_providers",
+                    None,
+                )
+
+                if callable(method):
+
+                    result = method()
+
+                    if result:
+                        candidates = result
+
+            # ----------------------------------------------
+            # providers
+            # ----------------------------------------------
+
+            if not candidates:
+
+                value = getattr(
+                    manager,
+                    "providers",
+                    None,
+                )
+
+                if callable(value):
+
+                    value = value()
+
+                if value:
+                    candidates = value
+
+            # ----------------------------------------------
+            # registry
+            # ----------------------------------------------
+
+            if not candidates:
+
+                registry = getattr(
+                    manager,
+                    "registry",
+                    None,
+                )
+
+                if isinstance(
+                    registry,
+                    dict,
+                ):
+
+                    candidates = registry.keys()
+
+                else:
+
+                    method = getattr(
+                        registry,
+                        "list",
+                        None,
+                    )
+
+                    if callable(method):
+
+                        result = method()
+
+                        if result:
+                            candidates = result
+
+            for provider in candidates or []:
+
+                name = normalize_provider_name(
+                    provider
+                )
+
+                if name:
+                    providers.append(name)
+
+        except Exception:
+            providers = []
+
+        if not providers:
+
+            providers = list(
+                DEFAULT_PROVIDERS
+            )
+
+        providers = sorted(
+            set(providers),
+            key=str.lower,
+        )
+
+        self.providers_list.clear()
+
+        for provider in providers:
+
+            item = QListWidgetItem(
+                f"◉  {provider}"
+            )
+
+            item.setData(
+                Qt.UserRole,
+                provider,
+            )
+
+            self.providers_list.addItem(item)
+
+        if self.providers_list.count():
+
+            self.providers_list.setCurrentRow(0)
+
+    # ========================================================
+    # VALIDATE
+    # ========================================================
+
+    def _validate(self) -> None:
+
+        name = self.name_edit.text().strip()
+
+        if not name:
+
+            QMessageBox.warning(
+                self,
+                "INVALID SCRAPER",
+                "Scraper name cannot be empty.",
+            )
+
+            self.name_edit.setFocus()
+
+            return
+
+        keyword_file = (
+            self.keyword_file_edit
+            .text()
+            .strip()
+        )
+
+        keyword_path = Path(keyword_file)
+
+        if not keyword_file:
+
+            QMessageBox.warning(
+                self,
+                "INVALID KEYWORD FILE",
+                "Select a keyword file.",
+            )
+
+            return
+
+        if not keyword_path.is_file():
+
+            QMessageBox.warning(
+                self,
+                "KEYWORD FILE NOT FOUND",
+                "The selected keyword file does not exist.",
+            )
+
+            return
+
+        if not self._read_keywords():
+
+            QMessageBox.warning(
+                self,
+                "EMPTY KEYWORD FILE",
+                "The selected keyword file contains no keywords.",
+            )
+
+            return
+
+        province = self.province_edit.text().strip()
+
+        city = self.city_edit.text().strip()
+
+        if not province:
+
+            QMessageBox.warning(
+                self,
+                "INVALID LOCATION",
+                "Province cannot be empty.",
+            )
+
+            self.province_edit.setFocus()
+
+            return
+
+        if not city:
+
+            QMessageBox.warning(
+                self,
+                "INVALID LOCATION",
+                "City cannot be empty.",
+            )
+
+            self.city_edit.setFocus()
+
+            return
+
+        item = self.providers_list.currentItem()
+
+        if item is None:
+
+            QMessageBox.warning(
+                self,
+                "INVALID PROVIDER",
+                "Select a search provider.",
+            )
+
+            self.providers_list.setFocus()
+
+            return
+
+        database = (
+            self.database_edit
+            .text()
+            .strip()
+        )
+
+        if not database:
+
+            QMessageBox.warning(
+                self,
+                "INVALID DATABASE",
+                "Database path cannot be empty.",
+            )
+
+            self.database_edit.setFocus()
+
+            return
+
+        self.accept()
+
+    # ========================================================
+    # DATA
+    # ========================================================
+
+    def data(self) -> dict:
+
+        item = self.providers_list.currentItem()
+
+        provider = ""
+
+        if item is not None:
+
+            provider = str(
+                item.data(Qt.UserRole)
+                or ""
+            ).strip()
+
+        providers = (
+            [provider]
+            if provider
+            else []
+        )
+
+        province = (
+            self.province_edit
+            .text()
+            .strip()
+        )
+
+        city = (
+            self.city_edit
+            .text()
+            .strip()
+        )
+
+        config = {
+
+            # ----------------------------------------------
+            # KEYWORDS
+            # ----------------------------------------------
+
+            "keyword_file": (
+                self.keyword_file_edit
+                .text()
+                .strip()
+            ),
+
+            "keyword_mode": "file",
+
+            "keyword_execution": "sequential",
+
+            "process_all_keywords": True,
+
+            "stop_on_keyword_error": False,
+
+            # ----------------------------------------------
+            # LOCATION
+            # ----------------------------------------------
+
+            "province": province,
+
+            "city": city,
+
+            "location": {
+                "province": province,
+                "city": city,
+            },
+
+            # ----------------------------------------------
+            # SEARCH
+            # ----------------------------------------------
+
+            "max_queries": (
+                self.max_queries_spin.value()
+            ),
+
+            "pages_per_query": (
+                self.pages_per_query_spin.value()
+            ),
+
+            "results_per_page": (
+                self.results_per_page_spin.value()
+            ),
+
+            "delay": (
+                self.delay_spin.value()
+            ),
+
+            "timeout": (
+                self.timeout_spin.value()
+            ),
+
+            "search_provider": providers,
+        }
+
+        # ----------------------------------------------
+        # ADVANCED
+        # ----------------------------------------------
+
+        for raw_line in (
+            self.config_edit
+            .toPlainText()
+            .splitlines()
+        ):
+
+            line = raw_line.strip()
+
+            if not line:
+                continue
+
+            if line.startswith("#"):
+                continue
+
+            if "=" not in line:
+                continue
+
+            key, value = line.split(
+                "=",
+                1,
+            )
+
+            key = key.strip()
+            value = value.strip()
+
+            if key:
+                config[key] = value
+
+        return {
+            "name": (
+                self.name_edit
+                .text()
+                .strip()
+            ),
+
+            "providers": providers,
+
+            "target": (
+                self.target_edit
+                .text()
+                .strip()
+                or None
+            ),
+
+            "database": (
+                self.database_edit
+                .text()
+                .strip()
+                or None
+            ),
+
+            "scraper_dir": (
+                self.scraper_dir_edit
+                .text()
+                .strip()
+                or None
+            ),
+
+            "config": config,
+        }
+
+    # ========================================================
+    # STYLE
+    # ========================================================
+
+    def _apply_style(self) -> None:
+
+        self.setStyleSheet(
+            f"""
+            QDialog {{
+                background: {BG};
+            }}
+
+            QFrame#DialogHeader {{
+                background: {SURFACE};
+                border: 1px solid {BORDER};
+                border-radius: 10px;
+            }}
+
+            QLabel {{
+                color: {TEXT};
+                background: transparent;
+            }}
+
+            QLabel#DialogTitle {{
+                color: {AMBER};
+                font-size: 25px;
+                font-weight: 900;
+            }}
+
+            QLabel#DialogSubtitle {{
+                color: {TEXT_MUTED};
+                font-size: 10px;
+                font-weight: 900;
+            }}
+
+            QFrame#ConfigSection {{
+                background: {SURFACE};
+                border: 1px solid {BORDER_SOFT};
+                border-radius: 10px;
+            }}
+
+            QLabel#SectionTitle {{
+                color: {AMBER};
+                font-size: 12px;
+                font-weight: 900;
+            }}
+
+            QLabel#SectionSubtitle {{
+                color: {TEXT_MUTED};
+                font-size: 10px;
+                font-weight: 700;
+            }}
+
+            QFormLayout QLabel {{
+                color: {TEXT_SECONDARY};
+                font-size: 11px;
+                font-weight: 900;
+            }}
+
+            QLineEdit,
+            QTextEdit,
+            QSpinBox {{
+                background: {SURFACE_2};
+                color: {TEXT};
+                border: 1px solid {BORDER};
+                border-radius: 7px;
+                padding: 9px 11px;
+                font-size: 12px;
+                selection-background-color: {PURPLE};
+            }}
+
+            QLineEdit:focus,
+            QTextEdit:focus,
+            QSpinBox:focus {{
+                border-color: {ORANGE};
+            }}
+
+            QSpinBox {{
+                min-height: 30px;
+            }}
+
+            QSpinBox::up-button,
+            QSpinBox::down-button {{
+                background: {SURFACE_3};
+                border: none;
+                width: 22px;
+            }}
+
+            QSpinBox::up-button:hover,
+            QSpinBox::down-button:hover {{
+                background: {BURGUNDY};
+            }}
+
+            QListWidget {{
+                background: {SURFACE_2};
+                border: 1px solid {BORDER};
+                border-radius: 7px;
+                padding: 5px;
+                outline: none;
+            }}
+
+            QListWidget::item {{
+                color: {TEXT_SECONDARY};
+                padding: 7px 10px;
+                border-radius: 5px;
+                font-size: 11px;
+                font-weight: 800;
+            }}
+
+            QListWidget::item:hover {{
+                background: {SURFACE_3};
+                color: {TEXT};
+            }}
+
+            QListWidget::item:selected {{
+                background: {PURPLE};
+                color: {AMBER};
+                border-left: 3px solid {ORANGE};
+            }}
+
+            QListWidget#ProviderList {{
+                min-height: 145px;
+            }}
+
+            QListWidget#ProviderList::item {{
+                padding: 12px;
+                font-size: 13px;
+            }}
+
+            QLabel#KeywordInfo,
+            QLabel#ProviderHint {{
+                color: {TEXT_MUTED};
+                font-size: 10px;
+                font-weight: 900;
+            }}
+
+            QPushButton {{
+                background: {SURFACE_2};
+                color: {TEXT_SECONDARY};
+                border: 1px solid {BORDER};
+                border-radius: 7px;
+                padding: 9px 15px;
+                font-size: 11px;
+                font-weight: 900;
+            }}
+
+            QPushButton:hover {{
+                color: {AMBER};
+                border-color: {ORANGE};
+                background: {SURFACE_3};
+            }}
+
+            QPushButton:pressed {{
+                background: {DEEP_ORANGE};
+            }}
+
+            QPushButton#PrimaryButton {{
+                background: {AMBER};
+                color: {BG};
+                border-color: {AMBER};
+                padding: 11px 20px;
+            }}
+
+            QPushButton#PrimaryButton:hover {{
+                background: {ORANGE};
+                border-color: {ORANGE};
+            }}
+
+            QPushButton#SecondaryButton {{
+                min-width: 90px;
+            }}
+
+            QScrollArea {{
+                background: transparent;
+                border: none;
+            }}
+
+            QScrollBar:vertical {{
+                background: {SURFACE};
+                width: 10px;
+            }}
+
+            QScrollBar::handle:vertical {{
+                background: {BORDER};
+                min-height: 35px;
+                border-radius: 5px;
+            }}
+
+            QScrollBar::handle:vertical:hover {{
+                background: {ORANGE};
+            }}
+
+            QScrollBar::add-line:vertical,
+            QScrollBar::sub-line:vertical {{
+                height: 0;
+            }}
+            """
+        )
+
+
+# ============================================================
+# MASTER WINDOW
+# ============================================================
+
+class MasterWindow(QWidget):
+
+    def __init__(
+        self,
+        manager: ProcessManager,
+        parent: Optional[QWidget] = None,
+    ) -> None:
+
+        super().__init__(parent)
+
+        if manager is None:
+            raise ValueError(
+                "ProcessManager is required."
+            )
+
+        self.manager = manager
+
+        self.controller = GUIController(
+            process_manager=manager
+        )
+
+        self.current_scraper: Optional[str] = None
+
+        self._build_ui()
+        self._apply_style()
+
+        self.refresh_timer = QTimer(self)
+
+        self.refresh_timer.setInterval(
+            1000
+        )
+
+        self.refresh_timer.timeout.connect(
+            self.refresh
+        )
+
+        self.refresh_timer.start()
+
+        self.refresh()
+
+    # ========================================================
+    # BUILD
+    # ========================================================
+
+    def _build_ui(self) -> None:
+
+        root = QFrame()
+
+        root.setObjectName(
+            "MasterRoot"
+        )
+
+        layout = QVBoxLayout(root)
+
+        layout.setContentsMargins(
+            0,
+            0,
+            0,
+            0,
+        )
+
+        layout.setSpacing(14)
+
+        # ----------------------------------------------------
+        # HEADER
+        # ----------------------------------------------------
+
+        header = QHBoxLayout()
+
+        title_box = QVBoxLayout()
+
+        title_box.setSpacing(2)
+
+        title = QLabel(
+            "EYE // MASTER"
+        )
+
+        title.setObjectName(
+            "MasterTitle"
+        )
+
+        subtitle = QLabel(
+            "SCRAPER ORCHESTRATION // BUSINESS INTELLIGENCE"
+        )
+
+        subtitle.setObjectName(
+            "MasterSubtitle"
+        )
+
+        title_box.addWidget(title)
+        title_box.addWidget(subtitle)
+
+        header.addLayout(title_box)
+        header.addStretch()
+
+        self.connection_label = QLabel(
+            "● MASTER ONLINE"
+        )
+
+        self.connection_label.setObjectName(
+            "Connection"
+        )
+
+        header.addWidget(
+            self.connection_label
+        )
+
+        layout.addLayout(header)
+
+        # ----------------------------------------------------
+        # STATS
+        # ----------------------------------------------------
+
+        stats = QHBoxLayout()
+
+        stats.setSpacing(10)
+
+        self.total_value = self._create_stat(
+            stats,
+            "TOTAL",
+            TEXT,
+        )
+
+        self.running_value = self._create_stat(
+            stats,
+            "RUNNING",
+            GREEN,
+        )
+
+        self.starting_value = self._create_stat(
+            stats,
+            "STARTING",
+            AMBER,
+        )
+
+        self.failed_value = self._create_stat(
+            stats,
+            "FAILED",
+            RED,
+        )
+
+        self.finished_value = self._create_stat(
+            stats,
+            "FINISHED",
+            BLUE,
+        )
+
+        layout.addLayout(stats)
+
+        # ----------------------------------------------------
+        # SPLITTER
+        # ----------------------------------------------------
+
+        splitter = QSplitter(
+            Qt.Horizontal
+        )
+
+        splitter.setChildrenCollapsible(
+            False
+        )
+
+        # ====================================================
+        # LEFT
+        # ====================================================
+
+        left = QFrame()
+
+        left.setObjectName(
+            "Panel"
+        )
+
+        left_layout = QVBoxLayout(left)
+
+        left_layout.setContentsMargins(
+            15,
+            15,
+            15,
+            15,
+        )
+
+        left_layout.setSpacing(11)
+
+        left_header = QHBoxLayout()
+
+        left_title = QLabel(
+            "SCRAPER PROCESSES"
+        )
+
+        left_title.setObjectName(
+            "SectionTitle"
+        )
+
+        left_header.addWidget(left_title)
+        left_header.addStretch()
+
+        self.new_scraper_button = QPushButton(
+            "＋ NEW"
+        )
+
+        self.new_scraper_button.setObjectName(
+            "PrimaryButton"
+        )
+
+        self.new_scraper_button.clicked.connect(
+            self._new_scraper
+        )
+
+        left_header.addWidget(
+            self.new_scraper_button
+        )
+
+        self.refresh_button = QPushButton(
+            "REFRESH"
+        )
+
+        self.refresh_button.clicked.connect(
+            self.refresh
+        )
+
+        left_header.addWidget(
+            self.refresh_button
+        )
+
+        left_layout.addLayout(left_header)
+
+        self.scraper_list = QListWidget()
+
+        self.scraper_list.setObjectName(
+            "ScraperList"
+        )
+
+        self.scraper_list.currentItemChanged.connect(
+            self._on_scraper_selected
+        )
+
+        left_layout.addWidget(
+            self.scraper_list,
+            1,
+        )
+
+        splitter.addWidget(left)
+
+        # ====================================================
+        # RIGHT
+        # ====================================================
+
+        right = QFrame()
+
+        right.setObjectName(
+            "Panel"
+        )
+
+        right_layout = QVBoxLayout(right)
+
+        right_layout.setContentsMargins(
+            18,
+            18,
+            18,
+            18,
+        )
+
+        right_layout.setSpacing(12)
+
+        details_header = QHBoxLayout()
+
+        self.scraper_name = QLabel(
+            "NO SCRAPER SELECTED"
+        )
+
+        self.scraper_name.setObjectName(
+            "DetailsTitle"
+        )
+
+        details_header.addWidget(
+            self.scraper_name
+        )
+
+        details_header.addStretch()
+
+        self.status_label = QLabel("—")
+
+        self.status_label.setObjectName(
+            "Status"
+        )
+
+        details_header.addWidget(
+            self.status_label
+        )
+
+        right_layout.addLayout(
+            details_header
+        )
+
+        # ----------------------------------------------------
+        # ACTIONS
+        # ----------------------------------------------------
+
+        actions = QHBoxLayout()
+
+        self.start_button = QPushButton(
+            "▶ START"
+        )
+
+        self.stop_button = QPushButton(
+            "■ STOP"
+        )
+
+        self.restart_button = QPushButton(
+            "↻ RESTART"
+        )
+
+        self.kill_button = QPushButton(
+            "✕ KILL"
+        )
+
+        self.remove_button = QPushButton(
+            "REMOVE"
+        )
+
+        self.start_button.clicked.connect(
+            self._start_selected
+        )
+
+        self.stop_button.clicked.connect(
+            self._stop_selected
+        )
+
+        self.restart_button.clicked.connect(
+            self._restart_selected
+        )
+
+        self.kill_button.clicked.connect(
+            self._kill_selected
+        )
+
+        self.remove_button.clicked.connect(
+            self._remove_selected
+        )
+
+        for button in (
+            self.start_button,
+            self.stop_button,
+            self.restart_button,
+            self.kill_button,
+        ):
+            actions.addWidget(button)
+
+        actions.addStretch()
+
+        actions.addWidget(
+            self.remove_button
+        )
+
+        right_layout.addLayout(actions)
+
+        # ----------------------------------------------------
+        # WORKFLOW
+        # ----------------------------------------------------
+
+        workflow = QFrame()
+
+        workflow.setObjectName(
+            "RuntimePanel"
+        )
+
+        workflow_layout = QVBoxLayout(
+            workflow
+        )
+
+        workflow_layout.setContentsMargins(
+            13,
+            11,
+            13,
+            11,
+        )
+
+        workflow_layout.setSpacing(7)
+
+        title = QLabel(
+            "KEYWORD WORKFLOW"
+        )
+
+        title.setObjectName(
+            "PanelTitle"
+        )
+
+        workflow_layout.addWidget(title)
+
+        self.keyword_file_value = QLabel("-")
+        self.province_value = QLabel("-")
+        self.city_value = QLabel("-")
+        self.workflow_mode_value = QLabel("-")
+
+        self._runtime_row(
+            workflow_layout,
+            "KEYWORD FILE",
+            self.keyword_file_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "PROVINCE",
+            self.province_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "CITY",
+            self.city_value,
+        )
+
+        self._runtime_row(
+            workflow_layout,
+            "MODE",
+            self.workflow_mode_value,
+        )
+
+        right_layout.addWidget(workflow)
+
+        # ----------------------------------------------------
+        # RUNTIME
+        # ----------------------------------------------------
+
+        runtime = QFrame()
+
+        runtime.setObjectName(
+            "RuntimePanel"
+        )
+
+        runtime_layout = QVBoxLayout(runtime)
+
+        runtime_layout.setContentsMargins(
+            13,
+            11,
+            13,
+            11,
+        )
+
+        runtime_layout.setSpacing(7)
+
+        title = QLabel(
+            "RUNTIME"
+        )
+
+        title.setObjectName(
+            "PanelTitle"
+        )
+
+        runtime_layout.addWidget(title)
+
+        self.pid_value = QLabel("-")
+        self.provider_value = QLabel("-")
+        self.target_value = QLabel("-")
+        self.database_value = QLabel("-")
+        self.started_value = QLabel("-")
+        self.exit_value = QLabel("-")
+
+        self._runtime_row(
+            runtime_layout,
+            "PID",
+            self.pid_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "PROVIDERS",
+            self.provider_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "TARGET",
+            self.target_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "DATABASE",
+            self.database_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "STARTED",
+            self.started_value,
+        )
+
+        self._runtime_row(
+            runtime_layout,
+            "EXIT CODE",
+            self.exit_value,
+        )
+
+        right_layout.addWidget(runtime)
+
+        # ----------------------------------------------------
+        # CONFIG
+        # ----------------------------------------------------
+
+        config_title = QLabel(
+            "CONFIGURATION"
+        )
+
+        config_title.setObjectName(
+            "PanelTitle"
+        )
+
+        right_layout.addWidget(config_title)
+
+        self.config_view = QListWidget()
+
+        self.config_view.setObjectName(
+            "ConfigView"
+        )
+
+        self.config_view.setMaximumHeight(
+            145
+        )
+
+        right_layout.addWidget(
+            self.config_view
+        )
+
+        # ----------------------------------------------------
+        # LOG
+        # ----------------------------------------------------
+
+        log_title = QLabel(
+            "MASTER EVENT LOG"
+        )
+
+        log_title.setObjectName(
+            "PanelTitle"
+        )
+
+        right_layout.addWidget(log_title)
+
+        self.log_view = QListWidget()
+
+        self.log_view.setObjectName(
+            "LogView"
+        )
+
+        right_layout.addWidget(
+            self.log_view,
+            1,
+        )
+
+        splitter.addWidget(right)
+
+        splitter.setSizes([
+            430,
+            1050,
+        ])
+
+        layout.addWidget(
+            splitter,
+            1,
+        )
+
+        root_layout = QVBoxLayout(self)
+
+        root_layout.setContentsMargins(
+            14,
+            14,
+            14,
+            14,
+        )
+
+        root_layout.addWidget(root)
+
+        self._set_action_state(False)
+
+    # ========================================================
+    # STAT
+    # ========================================================
+
+    @staticmethod
+    def _create_stat(
+        parent_layout: QHBoxLayout,
+        title: str,
+        color: str,
+    ) -> QLabel:
+
+        card = QFrame()
+
+        card.setObjectName(
+            "StatCard"
+        )
+
+        layout = QVBoxLayout(card)
+
+        layout.setContentsMargins(
+            14,
+            10,
+            14,
+            10,
+        )
+
+        layout.setSpacing(2)
+
+        title_label = QLabel(title)
+
+        title_label.setObjectName(
+            "StatTitle"
+        )
+
+        value = QLabel("0")
+
+        value.setObjectName(
+            "StatValue"
+        )
+
+        value.setStyleSheet(
+            f"color: {color};"
+        )
+
+        layout.addWidget(title_label)
+        layout.addWidget(value)
+
+        parent_layout.addWidget(card)
+
+        return value
+
+    # ========================================================
+    # RUNTIME ROW
+    # ========================================================
+
+    @staticmethod
+    def _runtime_row(
+        layout: QVBoxLayout,
+        name: str,
+        value: QLabel,
+    ) -> None:
+
+        row = QHBoxLayout()
+
+        key = QLabel(name)
+
+        key.setObjectName(
+            "RuntimeKey"
+        )
+
+        value.setObjectName(
+            "RuntimeValue"
+        )
+
+        value.setTextInteractionFlags(
+            Qt.TextSelectableByMouse
+        )
+
+        row.addWidget(key)
+        row.addStretch()
+        row.addWidget(value)
+
+        layout.addLayout(row)
+
+    # ========================================================
+    # STYLE
+    # ========================================================
+
+    def _apply_style(self) -> None:
+
+        self.setStyleSheet(
+            f"""
+            QWidget {{
+                background: {BG};
+            }}
+
+            QFrame#MasterRoot {{
+                background: {BG};
+            }}
+
+            QLabel {{
+                color: {TEXT};
+                background: transparent;
+            }}
+
+            QLabel#MasterTitle {{
+                color: {AMBER};
+                font-size: 32px;
+                font-weight: 900;
+            }}
+
+            QLabel#MasterSubtitle {{
+                color: {TEXT_MUTED};
+                font-size: 10px;
+                font-weight: 900;
+            }}
+
+            QLabel#Connection {{
+                color: {GREEN};
+                font-size: 11px;
+                font-weight: 900;
+            }}
+
+            QFrame#Panel {{
+                background: {SURFACE};
+                border: 1px solid {BORDER};
+                border-radius: 11px;
+            }}
+
+            QFrame#StatCard {{
+                background: {SURFACE};
+                border: 1px solid {BORDER_SOFT};
+                border-radius: 8px;
+                min-height: 68px;
+            }}
+
+            QLabel#StatTitle {{
+                color: {TEXT_MUTED};
+                font-size: 9px;
+                font-weight: 900;
+            }}
+
+            QLabel#StatValue {{
+                font-size: 25px;
+                font-weight: 900;
+            }}
+
+            QLabel#SectionTitle {{
+                color: {TEXT};
+                font-size: 14px;
+                font-weight: 900;
+            }}
+
+            QLabel#DetailsTitle {{
+                color: {AMBER};
+                font-size: 23px;
+                font-weight: 900;
+            }}
+
+            QLabel#Status {{
+                padding: 6px 13px;
+                border: 1px solid {BORDER};
+                border-radius: 7px;
+                font-size: 11px;
+                font-weight: 900;
+            }}
+
+            QFrame#RuntimePanel {{
+                background: {SURFACE_2};
+                border: 1px solid {BORDER_SOFT};
+                border-radius: 8px;
+            }}
+
+            QLabel#PanelTitle {{
+                color: {TEXT_MUTED};
+                font-size: 9px;
+                font-weight: 900;
+            }}
+
+            QLabel#RuntimeKey {{
+                color: {TEXT_MUTED};
+                font-size: 10px;
+                font-weight: 900;
+            }}
+
+            QLabel#RuntimeValue {{
+                color: {TEXT_SECONDARY};
+                font-size: 10px;
+                font-weight: 700;
+            }}
+
+            QListWidget {{
+                background: {SURFACE_2};
+                border: 1px solid {BORDER_SOFT};
+                border-radius: 7px;
+                padding: 5px;
+                outline: none;
+            }}
+
+            QListWidget::item {{
+                color: {TEXT_SECONDARY};
+                padding: 11px;
+                border-radius: 5px;
+                font-size: 11px;
+            }}
+
+            QListWidget::item:hover {{
+                background: {SURFACE_3};
+            }}
+
+            QListWidget::item:selected {{
+                background: {PURPLE};
+                color: {AMBER};
+                border-left: 3px solid {ORANGE};
+            }}
+
+            QListWidget#ConfigView::item {{
+                font-size: 9px;
+                padding: 5px;
+            }}
+
+            QListWidget#LogView::item {{
+                font-size: 10px;
+                color: {TEXT_MUTED};
+                padding: 6px;
+            }}
+
+            QPushButton {{
+                background: {SURFACE_2};
+                color: {TEXT_SECONDARY};
+                border: 1px solid {BORDER};
+                border-radius: 7px;
+                padding: 9px 14px;
+                font-size: 10px;
+                font-weight: 900;
+            }}
+
+            QPushButton:hover {{
+                color: {AMBER};
+                border-color: {ORANGE};
+                background: {SURFACE_3};
+            }}
+
+            QPushButton:pressed {{
+                background: {DEEP_ORANGE};
+            }}
+
+            QPushButton:disabled {{
+                color: #5E5058;
+                border-color: #342630;
+            }}
+
+            QPushButton#PrimaryButton {{
+                color: {BG};
+                background: {AMBER};
+                border-color: {AMBER};
+                font-weight: 900;
+            }}
+
+            QPushButton#PrimaryButton:hover {{
+                background: {ORANGE};
+                border-color: {ORANGE};
+            }}
+
+            QSplitter::handle {{
+                background: {BG};
+            }}
+
+            QScrollBar:vertical {{
+                background: {SURFACE};
+                width: 9px;
+            }}
+
+            QScrollBar::handle:vertical {{
+                background: {BORDER};
+                min-height: 30px;
+                border-radius: 4px;
+            }}
+
+            QScrollBar::handle:vertical:hover {{
+                background: {ORANGE};
+            }}
+
+            QScrollBar::add-line:vertical,
+            QScrollBar::sub-line:vertical {{
+                height: 0;
+            }}
+            """
+        )
+
+    # ========================================================
+    # REFRESH
+    # ========================================================
+
+    def refresh(self) -> None:
+
+        try:
+
+            self.controller.refresh()
+
+            processes = self.controller.all_processes()
+
+            if processes is None:
+                processes = []
+
+        except Exception as exc:
+
+            self.connection_label.setText(
+                "● MASTER ERROR"
+            )
+
+            self.connection_label.setStyleSheet(
+                f"color: {RED};"
+            )
+
+            self._log(
+                f"[REFRESH ERROR] {exc}"
+            )
+
+            return
+
+        self.connection_label.setText(
+            "● MASTER ONLINE"
+        )
+
+        self.connection_label.setStyleSheet(
+            f"color: {GREEN};"
+        )
+
+        self._update_stats(processes)
+
+        self._refresh_scraper_list(processes)
+
+        if self.current_scraper:
+
+            found = False
+
+            for process in processes:
+
+                if process.name == self.current_scraper:
+
+                    found = True
+                    break
+
+            if found:
+
+                self._load_scraper(
+                    self.current_scraper
+                )
+
+            else:
+
+                self.current_scraper = None
+
+                self._clear_details()
+
+    # ========================================================
+    # STATS
+    # ========================================================
+
+    def _update_stats(
+        self,
+        processes,
+    ) -> None:
+
+        total = len(processes)
+
+        running = 0
+        starting = 0
+        failed = 0
+        finished = 0
+
+        for process in processes:
+
+            name = safe_get(
+                process,
+                "name",
+            )
+
+            if not name:
+                continue
+
+            try:
+
+                status = self.controller.status(
+                    name
+                )
+
+            except Exception:
+
+                continue
+
+            if status == ScraperStatus.RUNNING:
+                running += 1
+
+            elif status == ScraperStatus.STARTING:
+                starting += 1
+
+            elif status == ScraperStatus.CRASHED:
+                failed += 1
+
+            elif status == ScraperStatus.FINISHED:
+                finished += 1
+
+        self.total_value.setText(str(total))
+        self.running_value.setText(str(running))
+        self.starting_value.setText(str(starting))
+        self.failed_value.setText(str(failed))
+        self.finished_value.setText(str(finished))
+
+    # ========================================================
+    # LIST
+    # ========================================================
+
+    def _refresh_scraper_list(
+        self,
+        processes,
+    ) -> None:
+
+        selected = self.current_scraper
+
+        self.scraper_list.blockSignals(True)
+
+        self.scraper_list.clear()
+
+        selected_item = None
+
+        for process in processes:
+
+            name = safe_get(
+                process,
+                "name",
+            )
+
+            if not name:
+                continue
+
+            try:
+
+                status = self.controller.status(
+                    name
+                )
+
+            except Exception:
+
+                continue
+
+            item = QListWidgetItem(
+                f"{name}  //  {safe_status_value(status)}"
+            )
+
+            item.setData(
+                Qt.UserRole,
+                name,
+            )
+
+            item.setForeground(
+                QColor(
+                    safe_status_color(status)
+                )
+            )
+
+            self.scraper_list.addItem(item)
+
+            if name == selected:
+                selected_item = item
+
+        if selected_item is not None:
+
+            self.scraper_list.setCurrentItem(
+                selected_item
+            )
+
+        elif self.scraper_list.count():
+
+            if not selected:
+
+                self.scraper_list.setCurrentRow(0)
+
+        self.scraper_list.blockSignals(False)
+
+    # ========================================================
+    # SELECT
+    # ========================================================
+
+    def _on_scraper_selected(
+        self,
+        current,
+        previous,
+    ) -> None:
+
+        if current is None:
+
+            self.current_scraper = None
+
+            self._clear_details()
+
+            return
+
+        name = current.data(
+            Qt.UserRole
+        )
+
+        if not name:
+
+            self.current_scraper = None
+
+            self._clear_details()
+
+            return
+
+        self.current_scraper = str(name)
+
+        self._load_scraper(
+            self.current_scraper
+        )
+
+    # ========================================================
+    # LOAD
+    # ========================================================
+
+    def _load_scraper(
+        self,
+        name: str,
+    ) -> None:
+
+        try:
+
+            snapshot = self.controller.snapshot(
+                name
+            )
+
+        except Exception as exc:
+
+            self._log(
+                f"[SNAPSHOT ERROR] {name}: {exc}"
+            )
+
+            return
+
+        try:
+
+            record = self.controller.scraper_info(
+                name
+            )
+
+        except Exception as exc:
+
+            self._log(
+                f"[INFO ERROR] {name}: {exc}"
+            )
+
+            return
+
+        if record is None:
+
+            self._clear_details()
+
+            return
+
+        status = safe_get(
+            record,
+            "status",
+        )
+
+        self.scraper_name.setText(
+            str(
+                safe_get(
+                    record,
+                    "name",
+                    name,
+                )
+            )
+        )
+
+        status_text = safe_status_value(status)
+
+        self.status_label.setText(
+            status_text
+        )
+
+        color = safe_status_color(status)
+
+        self.status_label.setStyleSheet(
+            f"""
+            color: {color};
+            border: 1px solid {color};
+            border-radius: 7px;
+            padding: 6px 13px;
+            font-size: 11px;
+            font-weight: 900;
+            """
+        )
+
+        pid = safe_get(
+            record,
+            "pid",
+        )
+
+        self.pid_value.setText(
+            str(pid)
+            if pid is not None
+            else "-"
+        )
+
+        providers = safe_get(
+            record,
+            "providers",
+            [],
+        )
+
+        if isinstance(
+            providers,
+            (list, tuple, set),
+        ):
+
+            provider_text = ", ".join(
+                str(item)
+                for item in providers
+            )
+
+        else:
+
+            provider_text = str(
+                providers or "-"
+            )
+
+        self.provider_value.setText(
+            provider_text or "-"
+        )
+
+        self.target_value.setText(
+            str(
+                safe_get(
+                    record,
+                    "target",
+                    None,
+                )
+                or "-"
+            )
+        )
+
+        self.database_value.setText(
+            str(
+                safe_get(
+                    record,
+                    "database",
+                    None,
+                )
+                or "-"
+            )
+        )
+
+        self.started_value.setText(
+            self._format_time(
+                safe_get(
+                    record,
+                    "started_at",
+                )
+            )
+        )
+
+        exit_code = safe_get(
+            record,
+            "exit_code",
+        )
+
+        self.exit_value.setText(
+            str(exit_code)
+            if exit_code is not None
+            else "-"
+        )
+
+        self._load_workflow(
+            record
+        )
+
+        self._load_config(
+            record
+        )
+
+        self._update_actions(
+            name
+        )
+
+    # ========================================================
+    # WORKFLOW
+    # ========================================================
+
+    def _load_workflow(
+        self,
+        record,
+    ) -> None:
+
+        config = safe_get(
+            record,
+            "config",
+            {},
+        )
+
+        if not isinstance(
+            config,
+            dict,
+        ):
+            config = {}
+
+        self.keyword_file_value.setText(
+            str(
+                config.get(
+                    "keyword_file",
+                    "-",
+                )
+            )
+        )
+
+        self.province_value.setText(
+            str(
+                config.get(
+                    "province",
+                    "-",
+                )
+            )
+        )
+
+        self.city_value.setText(
+            str(
+                config.get(
+                    "city",
+                    "-",
+                )
+            )
+        )
+
+        self.workflow_mode_value.setText(
+            str(
+                config.get(
+                    "keyword_execution",
+                    "-",
+                )
+            )
+        )
+
+    # ========================================================
+    # CONFIG
+    # ========================================================
+
+    def _load_config(
+        self,
+        record,
+    ) -> None:
+
+        self.config_view.clear()
+
+        config = safe_get(
+            record,
+            "config",
+            {},
+        )
+
+        if not isinstance(
+            config,
+            dict,
+        ):
+
+            self.config_view.addItem(
+                "{}"
+            )
+
+            return
+
+        if not config:
+
+            self.config_view.addItem(
+                "{}"
+            )
+
+            return
+
+        for key, value in config.items():
+
+            if isinstance(
+                value,
+                dict,
+            ):
+
+                value = str(value)
+
+            elif isinstance(
+                value,
+                (list, tuple, set),
+            ):
+
+                value = ", ".join(
+                    str(item)
+                    for item in value
+                )
+
+            self.config_view.addItem(
+                f"{key}: {value}"
+            )
+
+    # ========================================================
+    # NEW
+    # ========================================================
+
+    def _new_scraper(self) -> None:
+
+        dialog = NewScraperDialog(self)
+
+        if dialog.exec_() != QDialog.Accepted:
+            return
+
+        data = dialog.data()
+
+        name = data["name"]
+
+        try:
+
+            if self.controller.exists(name):
+
+                QMessageBox.warning(
+                    self,
+                    "SCRAPER EXISTS",
+                    f"A scraper named '{name}' already exists.",
+                )
+
+                return
+
+            self.controller.create_scraper(
+                name=name,
+                providers=data["providers"],
+                target=data["target"],
+                database=data["database"],
+                config=data["config"],
+                scraper_dir=data["scraper_dir"],
+            )
+
+            self.current_scraper = name
+
+            self._log(
+                f"[CREATE] {name}"
+            )
+
+            self._log(
+                "[KEYWORDS] "
+                f"{data['config'].get('keyword_file', '-')}"
+            )
+
+            self._log(
+                "[LOCATION] "
+                f"{data['config'].get('province', '-')} / "
+                f"{data['config'].get('city', '-')}"
+            )
+
+            self._log(
+                "[PROVIDER] "
+                f"{data['providers']}"
+            )
+
+            self._log(
+                "[MODE] SEQUENTIAL KEYWORD EXECUTION"
+            )
+
+            self.refresh()
+
+            self._select_scraper(name)
+
+        except Exception as exc:
+
+            self._error(
+                "CREATE SCRAPER FAILED",
+                exc,
+            )
+
+    # ========================================================
+    # SELECT BY NAME
+    # ========================================================
+
+    def _select_scraper(
+        self,
+        name: str,
+    ) -> None:
+
+        for index in range(
+            self.scraper_list.count()
+        ):
+
+            item = self.scraper_list.item(index)
+
+            if item.data(
+                Qt.UserRole
+            ) == name:
+
+                self.scraper_list.setCurrentItem(
+                    item
+                )
+
+                return
+
+    # ========================================================
+    # ACTIONS
+    # ========================================================
+
+    def _update_actions(
+        self,
+        name: str,
+    ) -> None:
+
+        try:
+
+            actions = (
+                self.controller.available_actions(
+                    name
+                )
+            )
+
+        except Exception as exc:
+
+            self._log(
+                f"[ACTION STATE ERROR] {exc}"
+            )
+
+            self._set_action_state(False)
+
+            return
+
+        if not isinstance(
+            actions,
+            dict,
+        ):
+
+            self._set_action_state(False)
+
+            return
+
+        self.start_button.setEnabled(
+            bool(
+                actions.get(
+                    "start",
+                    False,
+                )
+            )
+        )
+
+        self.stop_button.setEnabled(
+            bool(
+                actions.get(
+                    "stop",
+                    False,
+                )
+            )
+        )
+
+        self.restart_button.setEnabled(
+            bool(
+                actions.get(
+                    "restart",
+                    False,
+                )
+            )
+        )
+
+        self.kill_button.setEnabled(
+            bool(
+                actions.get(
+                    "kill",
+                    False,
+                )
+            )
+        )
+
+        self.remove_button.setEnabled(
+            bool(
+                actions.get(
+                    "remove",
+                    False,
+                )
+            )
+        )
+
+    def _set_action_state(
+        self,
+        enabled: bool,
+    ) -> None:
+
+        for button in (
+            self.start_button,
+            self.stop_button,
+            self.restart_button,
+            self.kill_button,
+            self.remove_button,
+        ):
+
+            button.setEnabled(enabled)
+
+    # ========================================================
+    # START
+    # ========================================================
+
+    def _start_selected(self) -> None:
+
+        self._run_action(
+            "START",
+            self.controller.start,
+        )
+
+    # ========================================================
+    # STOP
+    # ========================================================
+
+    def _stop_selected(self) -> None:
+
+        self._run_action(
+            "STOP",
+            self.controller.stop,
+        )
+
+    # ========================================================
+    # RESTART
+    # ========================================================
+
+    def _restart_selected(self) -> None:
+
+        self._run_action(
+            "RESTART",
+            self.controller.restart,
+        )
+
+    # ========================================================
+    # GENERIC ACTION
+    # ========================================================
+
+    def _run_action(
+        self,
+        action_name: str,
+        action,
+    ) -> None:
+
+        name = self.current_scraper
+
+        if not name:
+            return
+
+        try:
+
+            action(name)
+
+            self._log(
+                f"[{action_name}] {name}"
+            )
+
+            self.refresh()
+
+        except Exception as exc:
+
+            self._error(
+                f"{action_name} FAILED",
+                exc,
+            )
+
+    # ========================================================
+    # KILL
+    # ========================================================
+
+    def _kill_selected(self) -> None:
+
+        name = self.current_scraper
+
+        if not name:
+            return
+
+        answer = QMessageBox.question(
+            self,
+            "KILL SCRAPER",
+            f"Kill '{name}' immediately?",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No,
+        )
+
+        if answer != QMessageBox.Yes:
+            return
+
+        try:
+
+            self.controller.kill(name)
+
+            self._log(
+                f"[KILL] {name}"
+            )
+
+            self.refresh()
+
+        except Exception as exc:
+
+            self._error(
+                "KILL FAILED",
+                exc,
+            )
+
+    # ========================================================
+    # REMOVE
+    # ========================================================
+
+    def _remove_selected(self) -> None:
+
+        name = self.current_scraper
+
+        if not name:
+            return
+
+        answer = QMessageBox.question(
+            self,
+            "REMOVE SCRAPER",
+            f"Remove '{name}'?",
+            QMessageBox.Yes | QMessageBox.No,
+            QMessageBox.No,
+        )
+
+        if answer != QMessageBox.Yes:
+            return
+
+        try:
+
+            self.controller.remove(name)
+
+            self._log(
+                f"[REMOVE] {name}"
+            )
+
+            self.current_scraper = None
+
+            self._clear_details()
+
+            self.refresh()
+
+        except Exception as exc:
+
+            self._error(
+                "REMOVE FAILED",
+                exc,
+            )
+
+    # ========================================================
+    # CLEAR
+    # ========================================================
+
+    def _clear_details(self) -> None:
+
+        self.scraper_name.setText(
+            "NO SCRAPER SELECTED"
+        )
+
+        self.status_label.setText("—")
+
+        self.status_label.setStyleSheet("")
+
+        for label in (
+            self.pid_value,
+            self.provider_value,
+            self.target_value,
+            self.database_value,
+            self.started_value,
+            self.exit_value,
+            self.keyword_file_value,
+            self.province_value,
+            self.city_value,
+            self.workflow_mode_value,
+        ):
+
+            label.setText("-")
+
+        self.config_view.clear()
+
+        self._set_action_state(False)
+
+    # ========================================================
+    # LOG
+    # ========================================================
+
+    def _log(
+        self,
+        message: str,
+    ) -> None:
+
+        if not hasattr(
+            self,
+            "log_view",
+        ):
+            return
+
+        self.log_view.addItem(
+            str(message)
+        )
+
+        self.log_view.scrollToBottom()
+
+        # Prevent unlimited GUI memory growth.
+        maximum = 1000
+
+        while self.log_view.count() > maximum:
+
+            self.log_view.takeItem(0)
+
+    # ========================================================
+    # ERROR
+    # ========================================================
+
+    def _error(
+        self,
+        title: str,
+        exc: Exception,
+    ) -> None:
+
+        self._log(
+            f"[ERROR] {title}: {exc}"
+        )
+
+        QMessageBox.critical(
+            self,
+            title,
+            str(exc),
+        )
+
+    # ========================================================
+    # TIME
+    # ========================================================
+
+    @staticmethod
+    def _format_time(
+        value: Any,
+    ) -> str:
+
+        if value is None:
+            return "-"
+
+        try:
+
+            import datetime
+
+            if isinstance(
+                value,
+                datetime.datetime,
+            ):
+
+                return value.strftime(
+                    "%Y-%m-%d %H:%M:%S"
+                )
+
+            if isinstance(
+                value,
+                (int, float),
+            ):
+
+                return (
+                    datetime.datetime
+                    .fromtimestamp(value)
+                    .strftime(
+                        "%Y-%m-%d %H:%M:%S"
+                    )
+                )
+
+        except Exception:
+            pass
+
+        return str(value)
+
+    # ========================================================
+    # CLOSE
+    # ========================================================
+
+    def closeEvent(
+        self,
+        event,
+    ) -> None:
+
+        try:
+            self.refresh_timer.stop()
+        except Exception:
+            pass
+
+        event.accept()

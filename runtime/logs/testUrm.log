@@ -1,0 +1,4271 @@
+[testUrm] [WORKER] Starting
+[testUrm] [JOB] 231474414904449695747f5e08c93303
+[testUrm] [DATABASE] runtime/database/testUrm.db
+[testUrm] [PROVIDER] balad
+[testUrm] [KEYWORDS] Loaded: 225
+[testUrm] [KEYWORD] 1/225 | سوپرمارکت
+[testUrm] [DATABASE] Opening: runtime/database/testUrm.db
+[testUrm] [DATABASE] Ready
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] سوپرمارکت ارومیه آذربایجان
+[testUrm] [SEARCH] سوپرمارکت ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='سوپرمارکت ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] سوپرمارکت ارومیه
+[testUrm] [SEARCH] سوپرمارکت ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت ارومیه' page=1 count=8
+[testUrm] [BUSINESSES] query='سوپرمارکت ارومیه' page=1 count=8
+[testUrm] [QUERY 3/11] سوپرمارکت در ارومیه
+[testUrm] [SEARCH] سوپرمارکت در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='سوپرمارکت در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] سوپرمارکت نزدیک ارومیه
+[testUrm] [SEARCH] سوپرمارکت نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='سوپرمارکت نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] سوپرمارکت اطراف ارومیه
+[testUrm] [SEARCH] سوپرمارکت اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='سوپرمارکت اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] سوپرمارکت آذربایجان
+[testUrm] [SEARCH] سوپرمارکت آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت آذربایجان' page=1 count=20
+[testUrm] [BUSINESSES] query='سوپرمارکت آذربایجان' page=1 count=20
+[testUrm] [QUERY 7/11] سوپرمارکت
+[testUrm] [SEARCH] سوپرمارکت
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت' page=1 count=0
+[testUrm] [BUSINESSES] query='سوپرمارکت' page=1 count=0
+[testUrm] [QUERY 8/11] سوپرمارکت محدوده ارومیه
+[testUrm] [SEARCH] سوپرمارکت محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='سوپرمارکت محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] سوپرمارکت مرکز ارومیه
+[testUrm] [SEARCH] سوپرمارکت مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='سوپرمارکت مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] سوپرمارکت در آذربایجان
+[testUrm] [SEARCH] سوپرمارکت در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='سوپرمارکت در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] سوپرمارکت اطراف آذربایجان
+[testUrm] [SEARCH] سوپرمارکت اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='سوپرمارکت اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='سوپرمارکت اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=84 | results=84 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] سوپرمارکت | raw=84
+[testUrm] [PIPELINE] INPUT: 84
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=34 saved=34 duplicates=50 rejected=0
+[testUrm] [KEYWORD FINISHED] سوپرمارکت | accepted=34
+[testUrm] [KEYWORD] 2/225 | فروشگاه مواد غذایی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه مواد غذایی ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه مواد غذایی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه مواد غذایی ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه مواد غذایی در ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] فروشگاه مواد غذایی نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه مواد غذایی اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی اطراف ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی اطراف ارومیه' page=1 count=11
+[testUrm] [QUERY 6/11] فروشگاه مواد غذایی آذربایجان
+[testUrm] [SEARCH] فروشگاه مواد غذایی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه مواد غذایی
+[testUrm] [SEARCH] فروشگاه مواد غذایی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی' page=1 count=39
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی' page=1 count=39
+[testUrm] [QUERY 8/11] فروشگاه مواد غذایی محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه مواد غذایی مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه مواد غذایی مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] فروشگاه مواد غذایی در آذربایجان
+[testUrm] [SEARCH] فروشگاه مواد غذایی در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] فروشگاه مواد غذایی اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه مواد غذایی اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مواد غذایی اطراف آذربایجان' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه مواد غذایی اطراف آذربایجان' page=1 count=12
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=122 | results=122 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه مواد غذایی | raw=122
+[testUrm] [PIPELINE] INPUT: 122
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] COMPLETE | accepted=81 saved=81 duplicates=125 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه مواد غذایی | accepted=47
+[testUrm] [KEYWORD] 3/225 | بقالی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] بقالی ارومیه آذربایجان
+[testUrm] [SEARCH] بقالی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='بقالی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] بقالی ارومیه
+[testUrm] [SEARCH] بقالی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی ارومیه' page=1 count=8
+[testUrm] [BUSINESSES] query='بقالی ارومیه' page=1 count=8
+[testUrm] [QUERY 3/11] بقالی در ارومیه
+[testUrm] [SEARCH] بقالی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='بقالی در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] بقالی نزدیک ارومیه
+[testUrm] [SEARCH] بقالی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='بقالی نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] بقالی اطراف ارومیه
+[testUrm] [SEARCH] بقالی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='بقالی اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] بقالی آذربایجان
+[testUrm] [SEARCH] بقالی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='بقالی آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] بقالی
+[testUrm] [SEARCH] بقالی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی' page=1 count=0
+[testUrm] [BUSINESSES] query='بقالی' page=1 count=0
+[testUrm] [QUERY 8/11] بقالی محدوده ارومیه
+[testUrm] [SEARCH] بقالی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='بقالی محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] بقالی مرکز ارومیه
+[testUrm] [SEARCH] بقالی مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='بقالی مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] بقالی در آذربایجان
+[testUrm] [SEARCH] بقالی در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='بقالی در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] بقالی اطراف آذربایجان
+[testUrm] [SEARCH] بقالی اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='بقالی اطراف آذربایجان' page=1 count=16
+[testUrm] [BUSINESSES] query='بقالی اطراف آذربایجان' page=1 count=16
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=80 | results=80 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] بقالی | raw=80
+[testUrm] [PIPELINE] INPUT: 80
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=81 saved=81 duplicates=205 rejected=0
+[testUrm] [KEYWORD FINISHED] بقالی | accepted=0
+[testUrm] [KEYWORD] 4/225 | خواربارفروشی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] خواربارفروشی ارومیه آذربایجان
+[testUrm] [SEARCH] خواربارفروشی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='خواربارفروشی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] خواربارفروشی ارومیه
+[testUrm] [SEARCH] خواربارفروشی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی ارومیه' page=1 count=8
+[testUrm] [BUSINESSES] query='خواربارفروشی ارومیه' page=1 count=8
+[testUrm] [QUERY 3/11] خواربارفروشی در ارومیه
+[testUrm] [SEARCH] خواربارفروشی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] خواربارفروشی نزدیک ارومیه
+[testUrm] [SEARCH] خواربارفروشی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] خواربارفروشی اطراف ارومیه
+[testUrm] [SEARCH] خواربارفروشی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='خواربارفروشی اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] خواربارفروشی آذربایجان
+[testUrm] [SEARCH] خواربارفروشی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] خواربارفروشی
+[testUrm] [SEARCH] خواربارفروشی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی' page=1 count=0
+[testUrm] [BUSINESSES] query='خواربارفروشی' page=1 count=0
+[testUrm] [QUERY 8/11] خواربارفروشی محدوده ارومیه
+[testUrm] [SEARCH] خواربارفروشی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] خواربارفروشی مرکز ارومیه
+[testUrm] [SEARCH] خواربارفروشی مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] خواربارفروشی در آذربایجان
+[testUrm] [SEARCH] خواربارفروشی در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='خواربارفروشی در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] خواربارفروشی اطراف آذربایجان
+[testUrm] [SEARCH] خواربارفروشی اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='خواربارفروشی اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='خواربارفروشی اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=74 | results=74 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] خواربارفروشی | raw=74
+[testUrm] [PIPELINE] INPUT: 74
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=82 saved=82 duplicates=278 rejected=0
+[testUrm] [KEYWORD FINISHED] خواربارفروشی | accepted=1
+[testUrm] [KEYWORD] 5/225 | فروشگاه زنجیره‌ای
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه زنجیره‌ای ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه زنجیره‌ای ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای ارومیه' page=1 count=18
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای ارومیه' page=1 count=18
+[testUrm] [QUERY 3/11] فروشگاه زنجیره‌ای در ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای در ارومیه' page=1 count=15
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای در ارومیه' page=1 count=15
+[testUrm] [QUERY 4/11] فروشگاه زنجیره‌ای نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه زنجیره‌ای اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای اطراف ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای اطراف ارومیه' page=1 count=11
+[testUrm] [QUERY 6/11] فروشگاه زنجیره‌ای آذربایجان
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای آذربایجان' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای آذربایجان' page=1 count=9
+[testUrm] [QUERY 7/11] فروشگاه زنجیره‌ای
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای' page=1 count=36
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای' page=1 count=36
+[testUrm] [QUERY 8/11] فروشگاه زنجیره‌ای محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه زنجیره‌ای مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] فروشگاه زنجیره‌ای در آذربایجان
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای در آذربایجان' page=1 count=4
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای در آذربایجان' page=1 count=4
+[testUrm] [QUERY 11/11] فروشگاه زنجیره‌ای اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه زنجیره‌ای اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه زنجیره\u200cای اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه زنجیره\u200cای اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=133 | results=133 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه زنجیره‌ای | raw=133
+[testUrm] [PIPELINE] INPUT: 133
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=136 saved=136 duplicates=357 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه زنجیره‌ای | accepted=54
+[testUrm] [KEYWORD] 6/225 | هایپرمارکت
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] هایپرمارکت ارومیه آذربایجان
+[testUrm] [SEARCH] هایپرمارکت ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='هایپرمارکت ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] هایپرمارکت ارومیه
+[testUrm] [SEARCH] هایپرمارکت ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت ارومیه' page=1 count=8
+[testUrm] [BUSINESSES] query='هایپرمارکت ارومیه' page=1 count=8
+[testUrm] [QUERY 3/11] هایپرمارکت در ارومیه
+[testUrm] [SEARCH] هایپرمارکت در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='هایپرمارکت در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] هایپرمارکت نزدیک ارومیه
+[testUrm] [SEARCH] هایپرمارکت نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='هایپرمارکت نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] هایپرمارکت اطراف ارومیه
+[testUrm] [SEARCH] هایپرمارکت اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='هایپرمارکت اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] هایپرمارکت آذربایجان
+[testUrm] [SEARCH] هایپرمارکت آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت آذربایجان' page=1 count=15
+[testUrm] [BUSINESSES] query='هایپرمارکت آذربایجان' page=1 count=15
+[testUrm] [QUERY 7/11] هایپرمارکت
+[testUrm] [SEARCH] هایپرمارکت
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت' page=1 count=0
+[testUrm] [BUSINESSES] query='هایپرمارکت' page=1 count=0
+[testUrm] [QUERY 8/11] هایپرمارکت محدوده ارومیه
+[testUrm] [SEARCH] هایپرمارکت محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='هایپرمارکت محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] هایپرمارکت مرکز ارومیه
+[testUrm] [SEARCH] هایپرمارکت مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='هایپرمارکت مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] هایپرمارکت در آذربایجان
+[testUrm] [SEARCH] هایپرمارکت در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='هایپرمارکت در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] هایپرمارکت اطراف آذربایجان
+[testUrm] [SEARCH] هایپرمارکت اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='هایپرمارکت اطراف آذربایجان' page=1 count=16
+[testUrm] [BUSINESSES] query='هایپرمارکت اطراف آذربایجان' page=1 count=16
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=85 | results=85 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] هایپرمارکت | raw=85
+[testUrm] [PIPELINE] INPUT: 85
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=136 saved=136 duplicates=442 rejected=0
+[testUrm] [KEYWORD FINISHED] هایپرمارکت | accepted=0
+[testUrm] [KEYWORD] 7/225 | فروشگاه
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه ارومیه
+[testUrm] [SEARCH] فروشگاه ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه در ارومیه
+[testUrm] [SEARCH] فروشگاه در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] فروشگاه نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه نزدیک ارومیه' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه نزدیک ارومیه' page=1 count=7
+[testUrm] [QUERY 5/11] فروشگاه اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه اطراف ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه اطراف ارومیه' page=1 count=11
+[testUrm] [QUERY 6/11] فروشگاه آذربایجان
+[testUrm] [SEARCH] فروشگاه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه
+[testUrm] [SEARCH] فروشگاه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه' page=1 count=0
+[testUrm] [QUERY 8/11] فروشگاه محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محدوده ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه محدوده ارومیه' page=1 count=0
+[testUrm] [QUERY 9/11] فروشگاه مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] فروشگاه در آذربایجان
+[testUrm] [SEARCH] فروشگاه در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه در آذربایجان' page=1 count=2
+[testUrm] [BUSINESSES] query='فروشگاه در آذربایجان' page=1 count=2
+[testUrm] [QUERY 11/11] فروشگاه اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه اطراف آذربایجان' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه اطراف آذربایجان' page=1 count=12
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=72 | results=72 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه | raw=72
+[testUrm] [PIPELINE] INPUT: 72
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=151 saved=151 duplicates=499 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه | accepted=15
+[testUrm] [KEYWORD] 8/225 | فروشگاه محلی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه محلی ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه محلی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه محلی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه محلی ارومیه
+[testUrm] [SEARCH] فروشگاه محلی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی ارومیه' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه محلی ارومیه' page=1 count=7
+[testUrm] [QUERY 3/11] فروشگاه محلی در ارومیه
+[testUrm] [SEARCH] فروشگاه محلی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی در ارومیه' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه محلی در ارومیه' page=1 count=7
+[testUrm] [QUERY 4/11] فروشگاه محلی نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه محلی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه محلی نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه محلی اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه محلی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی اطراف ارومیه' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه محلی اطراف ارومیه' page=1 count=7
+[testUrm] [QUERY 6/11] فروشگاه محلی آذربایجان
+[testUrm] [SEARCH] فروشگاه محلی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه محلی آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه محلی
+[testUrm] [SEARCH] فروشگاه محلی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه محلی' page=1 count=11
+[testUrm] [QUERY 8/11] فروشگاه محلی محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه محلی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه محلی محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه محلی مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه محلی مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی مرکز ارومیه' page=1 count=21
+[testUrm] [BUSINESSES] query='فروشگاه محلی مرکز ارومیه' page=1 count=21
+[testUrm] [QUERY 10/11] فروشگاه محلی در آذربایجان
+[testUrm] [SEARCH] فروشگاه محلی در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه محلی در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] فروشگاه محلی اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه محلی اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه محلی اطراف آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='فروشگاه محلی اطراف آذربایجان' page=1 count=8
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=91 | results=91 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه محلی | raw=91
+[testUrm] [PIPELINE] INPUT: 91
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=186 saved=186 duplicates=555 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه محلی | accepted=35
+[testUrm] [KEYWORD] 9/225 | دکه
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] دکه ارومیه آذربایجان
+[testUrm] [SEARCH] دکه ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='دکه ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] دکه ارومیه
+[testUrm] [SEARCH] دکه ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='دکه ارومیه' page=1 count=6
+[testUrm] [QUERY 3/11] دکه در ارومیه
+[testUrm] [SEARCH] دکه در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه در ارومیه' page=1 count=12
+[testUrm] [BUSINESSES] query='دکه در ارومیه' page=1 count=12
+[testUrm] [QUERY 4/11] دکه نزدیک ارومیه
+[testUrm] [SEARCH] دکه نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه نزدیک ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='دکه نزدیک ارومیه' page=1 count=0
+[testUrm] [QUERY 5/11] دکه اطراف ارومیه
+[testUrm] [SEARCH] دکه اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='دکه اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] دکه آذربایجان
+[testUrm] [SEARCH] دکه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='دکه آذربایجان' page=1 count=8
+[testUrm] [QUERY 7/11] دکه
+[testUrm] [SEARCH] دکه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه' page=1 count=0
+[testUrm] [BUSINESSES] query='دکه' page=1 count=0
+[testUrm] [QUERY 8/11] دکه محدوده ارومیه
+[testUrm] [SEARCH] دکه محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه محدوده ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='دکه محدوده ارومیه' page=1 count=0
+[testUrm] [QUERY 9/11] دکه مرکز ارومیه
+[testUrm] [SEARCH] دکه مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='دکه مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] دکه در آذربایجان
+[testUrm] [SEARCH] دکه در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='دکه در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] دکه اطراف آذربایجان
+[testUrm] [SEARCH] دکه اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='دکه اطراف آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='دکه اطراف آذربایجان' page=1 count=8
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=50 | results=50 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] دکه | raw=50
+[testUrm] [PIPELINE] INPUT: 50
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=206 saved=206 duplicates=585 rejected=0
+[testUrm] [KEYWORD FINISHED] دکه | accepted=20
+[testUrm] [KEYWORD] 10/225 | کیوسک
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] کیوسک ارومیه آذربایجان
+[testUrm] [SEARCH] کیوسک ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='کیوسک ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] کیوسک ارومیه
+[testUrm] [SEARCH] کیوسک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='کیوسک ارومیه' page=1 count=6
+[testUrm] [QUERY 3/11] کیوسک در ارومیه
+[testUrm] [SEARCH] کیوسک در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک در ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='کیوسک در ارومیه' page=1 count=9
+[testUrm] [QUERY 4/11] کیوسک نزدیک ارومیه
+[testUrm] [SEARCH] کیوسک نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک نزدیک ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='کیوسک نزدیک ارومیه' page=1 count=0
+[testUrm] [QUERY 5/11] کیوسک اطراف ارومیه
+[testUrm] [SEARCH] کیوسک اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک اطراف ارومیه' page=1 count=6
+[testUrm] [BUSINESSES] query='کیوسک اطراف ارومیه' page=1 count=6
+[testUrm] [QUERY 6/11] کیوسک آذربایجان
+[testUrm] [SEARCH] کیوسک آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='کیوسک آذربایجان' page=1 count=8
+[testUrm] [QUERY 7/11] کیوسک
+[testUrm] [SEARCH] کیوسک
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک' page=1 count=0
+[testUrm] [BUSINESSES] query='کیوسک' page=1 count=0
+[testUrm] [QUERY 8/11] کیوسک محدوده ارومیه
+[testUrm] [SEARCH] کیوسک محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک محدوده ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='کیوسک محدوده ارومیه' page=1 count=0
+[testUrm] [QUERY 9/11] کیوسک مرکز ارومیه
+[testUrm] [SEARCH] کیوسک مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک مرکز ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='کیوسک مرکز ارومیه' page=1 count=9
+[testUrm] [QUERY 10/11] کیوسک در آذربایجان
+[testUrm] [SEARCH] کیوسک در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک در آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='کیوسک در آذربایجان' page=1 count=0
+[testUrm] [QUERY 11/11] کیوسک اطراف آذربایجان
+[testUrm] [SEARCH] کیوسک اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='کیوسک اطراف آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='کیوسک اطراف آذربایجان' page=1 count=8
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=46 | results=46 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] کیوسک | raw=46
+[testUrm] [PIPELINE] INPUT: 46
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=206 saved=206 duplicates=631 rejected=0
+[testUrm] [KEYWORD FINISHED] کیوسک | accepted=0
+[testUrm] [KEYWORD] 11/225 | فروشگاه پوشاک
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه پوشاک ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه پوشاک ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه پوشاک ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه پوشاک در ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] فروشگاه پوشاک نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه پوشاک اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک اطراف ارومیه' page=1 count=14
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک اطراف ارومیه' page=1 count=14
+[testUrm] [QUERY 6/11] فروشگاه پوشاک آذربایجان
+[testUrm] [SEARCH] فروشگاه پوشاک آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه پوشاک
+[testUrm] [SEARCH] فروشگاه پوشاک
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک' page=1 count=38
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک' page=1 count=38
+[testUrm] [QUERY 8/11] فروشگاه پوشاک محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه پوشاک مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه پوشاک مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک مرکز ارومیه' page=1 count=14
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک مرکز ارومیه' page=1 count=14
+[testUrm] [QUERY 10/11] فروشگاه پوشاک در آذربایجان
+[testUrm] [SEARCH] فروشگاه پوشاک در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک در آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک در آذربایجان' page=1 count=10
+[testUrm] [QUERY 11/11] فروشگاه پوشاک اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه پوشاک اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه پوشاک اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه پوشاک اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=136 | results=136 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه پوشاک | raw=136
+[testUrm] [PIPELINE] INPUT: 136
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=301 saved=301 duplicates=672 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه پوشاک | accepted=95
+[testUrm] [KEYWORD] 12/225 | فروشگاه کفش
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه کفش ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه کفش ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه کفش ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه کفش ارومیه
+[testUrm] [SEARCH] فروشگاه کفش ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه کفش ارومیه' page=1 count=11
+[testUrm] [QUERY 3/11] فروشگاه کفش در ارومیه
+[testUrm] [SEARCH] فروشگاه کفش در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش در ارومیه' page=1 count=8
+[testUrm] [BUSINESSES] query='فروشگاه کفش در ارومیه' page=1 count=8
+[testUrm] [QUERY 4/11] فروشگاه کفش نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه کفش نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کفش نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه کفش اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه کفش اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش اطراف ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کفش اطراف ارومیه' page=1 count=10
+[testUrm] [QUERY 6/11] فروشگاه کفش آذربایجان
+[testUrm] [SEARCH] فروشگاه کفش آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش آذربایجان' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه کفش آذربایجان' page=1 count=9
+[testUrm] [QUERY 7/11] فروشگاه کفش
+[testUrm] [SEARCH] فروشگاه کفش
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش' page=1 count=47
+[testUrm] [BUSINESSES] query='فروشگاه کفش' page=1 count=47
+[testUrm] [QUERY 8/11] فروشگاه کفش محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه کفش محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کفش محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه کفش مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه کفش مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش مرکز ارومیه' page=1 count=14
+[testUrm] [BUSINESSES] query='فروشگاه کفش مرکز ارومیه' page=1 count=14
+[testUrm] [QUERY 10/11] فروشگاه کفش در آذربایجان
+[testUrm] [SEARCH] فروشگاه کفش در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش در آذربایجان' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه کفش در آذربایجان' page=1 count=7
+[testUrm] [QUERY 11/11] فروشگاه کفش اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه کفش اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کفش اطراف آذربایجان' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه کفش اطراف آذربایجان' page=1 count=9
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=135 | results=135 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه کفش | raw=135
+[testUrm] [PIPELINE] INPUT: 135
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=388 saved=388 duplicates=720 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه کفش | accepted=87
+[testUrm] [KEYWORD] 13/225 | فروشگاه کیف
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه کیف ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه کیف ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه کیف ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه کیف ارومیه
+[testUrm] [SEARCH] فروشگاه کیف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کیف ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه کیف در ارومیه
+[testUrm] [SEARCH] فروشگاه کیف در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف در ارومیه' page=1 count=5
+[testUrm] [BUSINESSES] query='فروشگاه کیف در ارومیه' page=1 count=5
+[testUrm] [QUERY 4/11] فروشگاه کیف نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه کیف نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کیف نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه کیف اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه کیف اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف اطراف ارومیه' page=1 count=5
+[testUrm] [BUSINESSES] query='فروشگاه کیف اطراف ارومیه' page=1 count=5
+[testUrm] [QUERY 6/11] فروشگاه کیف آذربایجان
+[testUrm] [SEARCH] فروشگاه کیف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کیف آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه کیف
+[testUrm] [SEARCH] فروشگاه کیف
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف' page=1 count=50
+[testUrm] [BUSINESSES] query='فروشگاه کیف' page=1 count=50
+[testUrm] [QUERY 8/11] فروشگاه کیف محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه کیف محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کیف محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه کیف مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه کیف مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف مرکز ارومیه' page=1 count=14
+[testUrm] [BUSINESSES] query='فروشگاه کیف مرکز ارومیه' page=1 count=14
+[testUrm] [QUERY 10/11] فروشگاه کیف در آذربایجان
+[testUrm] [SEARCH] فروشگاه کیف در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف در آذربایجان' page=1 count=5
+[testUrm] [BUSINESSES] query='فروشگاه کیف در آذربایجان' page=1 count=5
+[testUrm] [QUERY 11/11] فروشگاه کیف اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه کیف اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کیف اطراف آذربایجان' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه کیف اطراف آذربایجان' page=1 count=12
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=131 | results=131 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه کیف | raw=131
+[testUrm] [PIPELINE] INPUT: 131
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=410 saved=410 duplicates=829 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه کیف | accepted=22
+[testUrm] [KEYWORD] 14/225 | فروشگاه لوازم خانگی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه لوازم خانگی ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم خانگی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه لوازم خانگی ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه لوازم خانگی در ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] فروشگاه لوازم خانگی نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه لوازم خانگی اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی اطراف ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی اطراف ارومیه' page=1 count=11
+[testUrm] [QUERY 6/11] فروشگاه لوازم خانگی آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم خانگی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه لوازم خانگی
+[testUrm] [SEARCH] فروشگاه لوازم خانگی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی' page=1 count=39
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی' page=1 count=39
+[testUrm] [QUERY 8/11] فروشگاه لوازم خانگی محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه لوازم خانگی مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم خانگی مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] فروشگاه لوازم خانگی در آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم خانگی در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی در آذربایجان' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی در آذربایجان' page=1 count=9
+[testUrm] [QUERY 11/11] فروشگاه لوازم خانگی اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم خانگی اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم خانگی اطراف آذربایجان' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه لوازم خانگی اطراف آذربایجان' page=1 count=9
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=128 | results=128 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه لوازم خانگی | raw=128
+[testUrm] [PIPELINE] INPUT: 128
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=483 saved=483 duplicates=884 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه لوازم خانگی | accepted=73
+[testUrm] [KEYWORD] 15/225 | فروشگاه لوازم آشپزخانه
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه لوازم آشپزخانه ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه لوازم آشپزخانه ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه ارومیه' page=1 count=15
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه ارومیه' page=1 count=15
+[testUrm] [QUERY 3/11] فروشگاه لوازم آشپزخانه در ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه در ارومیه' page=1 count=18
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه در ارومیه' page=1 count=18
+[testUrm] [QUERY 4/11] فروشگاه لوازم آشپزخانه نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه لوازم آشپزخانه اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه اطراف ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه اطراف ارومیه' page=1 count=10
+[testUrm] [QUERY 6/11] فروشگاه لوازم آشپزخانه آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه لوازم آشپزخانه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه' page=1 count=49
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه' page=1 count=49
+[testUrm] [QUERY 8/11] فروشگاه لوازم آشپزخانه محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه لوازم آشپزخانه مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه مرکز ارومیه' page=1 count=17
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه مرکز ارومیه' page=1 count=17
+[testUrm] [QUERY 10/11] فروشگاه لوازم آشپزخانه در آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه در آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه در آذربایجان' page=1 count=10
+[testUrm] [QUERY 11/11] فروشگاه لوازم آشپزخانه اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم آشپزخانه اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم آشپزخانه اطراف آذربایجان' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه لوازم آشپزخانه اطراف آذربایجان' page=1 count=11
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=160 | results=160 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه لوازم آشپزخانه | raw=160
+[testUrm] [PIPELINE] INPUT: 160
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_COORDINATES
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] COMPLETE | accepted=523 saved=523 duplicates=1004 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه لوازم آشپزخانه | accepted=40
+[testUrm] [KEYWORD] 16/225 | فروشگاه موبایل
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه موبایل ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه موبایل ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه موبایل ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه موبایل ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل ارومیه' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه موبایل ارومیه' page=1 count=12
+[testUrm] [QUERY 3/11] فروشگاه موبایل در ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل در ارومیه' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه موبایل در ارومیه' page=1 count=11
+[testUrm] [QUERY 4/11] فروشگاه موبایل نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه موبایل نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه موبایل اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل اطراف ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه موبایل اطراف ارومیه' page=1 count=10
+[testUrm] [QUERY 6/11] فروشگاه موبایل آذربایجان
+[testUrm] [SEARCH] فروشگاه موبایل آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه موبایل آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه موبایل
+[testUrm] [SEARCH] فروشگاه موبایل
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل' page=1 count=51
+[testUrm] [BUSINESSES] query='فروشگاه موبایل' page=1 count=51
+[testUrm] [QUERY 8/11] فروشگاه موبایل محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل محدوده ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه موبایل محدوده ارومیه' page=1 count=9
+[testUrm] [QUERY 9/11] فروشگاه موبایل مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه موبایل مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل مرکز ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه موبایل مرکز ارومیه' page=1 count=9
+[testUrm] [QUERY 10/11] فروشگاه موبایل در آذربایجان
+[testUrm] [SEARCH] فروشگاه موبایل در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل در آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='فروشگاه موبایل در آذربایجان' page=1 count=8
+[testUrm] [QUERY 11/11] فروشگاه موبایل اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه موبایل اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه موبایل اطراف آذربایجان' page=1 count=15
+[testUrm] [BUSINESSES] query='فروشگاه موبایل اطراف آذربایجان' page=1 count=15
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=145 | results=145 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه موبایل | raw=145
+[testUrm] [PIPELINE] INPUT: 145
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=625 saved=625 duplicates=1047 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه موبایل | accepted=102
+[testUrm] [KEYWORD] 17/225 | فروشگاه لوازم موبایل
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه لوازم موبایل ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم موبایل ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه لوازم موبایل ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل ارومیه' page=1 count=13
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل ارومیه' page=1 count=13
+[testUrm] [QUERY 3/11] فروشگاه لوازم موبایل در ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل در ارومیه' page=1 count=2
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل در ارومیه' page=1 count=2
+[testUrm] [QUERY 4/11] فروشگاه لوازم موبایل نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه لوازم موبایل اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل اطراف ارومیه' page=1 count=2
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل اطراف ارومیه' page=1 count=2
+[testUrm] [QUERY 6/11] فروشگاه لوازم موبایل آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم موبایل آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه لوازم موبایل
+[testUrm] [SEARCH] فروشگاه لوازم موبایل
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل' page=1 count=48
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل' page=1 count=48
+[testUrm] [QUERY 8/11] فروشگاه لوازم موبایل محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل محدوده ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل محدوده ارومیه' page=1 count=9
+[testUrm] [QUERY 9/11] فروشگاه لوازم موبایل مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم موبایل مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل مرکز ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل مرکز ارومیه' page=1 count=9
+[testUrm] [QUERY 10/11] فروشگاه لوازم موبایل در آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم موبایل در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل در آذربایجان' page=1 count=8
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل در آذربایجان' page=1 count=8
+[testUrm] [QUERY 11/11] فروشگاه لوازم موبایل اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم موبایل اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم موبایل اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم موبایل اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=121 | results=121 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه لوازم موبایل | raw=121
+[testUrm] [PIPELINE] INPUT: 121
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=648 saved=648 duplicates=1145 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه لوازم موبایل | accepted=23
+[testUrm] [KEYWORD] 18/225 | فروشگاه کامپیوتر
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه کامپیوتر ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه کامپیوتر ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه کامپیوتر ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه کامپیوتر در ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر در ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر در ارومیه' page=1 count=10
+[testUrm] [QUERY 4/11] فروشگاه کامپیوتر نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر نزدیک ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر نزدیک ارومیه' page=1 count=10
+[testUrm] [QUERY 5/11] فروشگاه کامپیوتر اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر اطراف ارومیه' page=1 count=7
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر اطراف ارومیه' page=1 count=7
+[testUrm] [QUERY 6/11] فروشگاه کامپیوتر آذربایجان
+[testUrm] [SEARCH] فروشگاه کامپیوتر آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه کامپیوتر
+[testUrm] [SEARCH] فروشگاه کامپیوتر
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر' page=1 count=14
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر' page=1 count=14
+[testUrm] [QUERY 8/11] فروشگاه کامپیوتر محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه کامپیوتر مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه کامپیوتر مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر مرکز ارومیه' page=1 count=16
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر مرکز ارومیه' page=1 count=16
+[testUrm] [QUERY 10/11] فروشگاه کامپیوتر در آذربایجان
+[testUrm] [SEARCH] فروشگاه کامپیوتر در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر در آذربایجان' page=1 count=4
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر در آذربایجان' page=1 count=4
+[testUrm] [QUERY 11/11] فروشگاه کامپیوتر اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه کامپیوتر اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه کامپیوتر اطراف آذربایجان' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه کامپیوتر اطراف آذربایجان' page=1 count=12
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=103 | results=103 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه کامپیوتر | raw=103
+[testUrm] [PIPELINE] INPUT: 103
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] DATABASE DUPLICATE: DUPLICATE_NAME_CITY
+[testUrm] [PIPELINE] COMPLETE | accepted=693 saved=693 duplicates=1203 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه کامپیوتر | accepted=45
+[testUrm] [KEYWORD] 19/225 | فروشگاه لوازم کامپیوتر
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه لوازم کامپیوتر ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه لوازم کامپیوتر ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه لوازم کامپیوتر در ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر در ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر در ارومیه' page=1 count=0
+[testUrm] [QUERY 4/11] فروشگاه لوازم کامپیوتر نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر نزدیک ارومیه' page=1 count=9
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر نزدیک ارومیه' page=1 count=9
+[testUrm] [QUERY 5/11] فروشگاه لوازم کامپیوتر اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر اطراف ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر اطراف ارومیه' page=1 count=0
+[testUrm] [QUERY 6/11] فروشگاه لوازم کامپیوتر آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر آذربایجان' page=1 count=10
+[testUrm] [QUERY 7/11] فروشگاه لوازم کامپیوتر
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر' page=1 count=24
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر' page=1 count=24
+[testUrm] [QUERY 8/11] فروشگاه لوازم کامپیوتر محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر محدوده ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر محدوده ارومیه' page=1 count=10
+[testUrm] [QUERY 9/11] فروشگاه لوازم کامپیوتر مرکز ارومیه
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر مرکز ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر مرکز ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر مرکز ارومیه' page=1 count=10
+[testUrm] [QUERY 10/11] فروشگاه لوازم کامپیوتر در آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر در آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر در آذربایجان' page=1 count=4
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر در آذربایجان' page=1 count=4
+[testUrm] [QUERY 11/11] فروشگاه لوازم کامپیوتر اطراف آذربایجان
+[testUrm] [SEARCH] فروشگاه لوازم کامپیوتر اطراف آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه لوازم کامپیوتر اطراف آذربایجان' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه لوازم کامپیوتر اطراف آذربایجان' page=1 count=10
+[testUrm] [COMPLETE] All queries processed
+[testUrm] [FINISHED] Scraper execution finished | queries=11 | pages=11 | raw=87 | results=87 | empty_pages=0 | repeated_pages=0
+[testUrm] [KEYWORD RESULT] فروشگاه لوازم کامپیوتر | raw=87
+[testUrm] [PIPELINE] INPUT: 87
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] SAVED: INSERTED
+[testUrm] [PIPELINE] ACCEPTED
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] RUNTIME DUPLICATE
+[testUrm] [PIPELINE] COMPLETE | accepted=727 saved=727 duplicates=1256 rejected=0
+[testUrm] [KEYWORD FINISHED] فروشگاه لوازم کامپیوتر | accepted=34
+[testUrm] [KEYWORD] 20/225 | فروشگاه الکترونیکی
+[testUrm] [PROVIDER] Loading: balad
+[testUrm] [PROVIDER] Ready: balad
+[testUrm] [START] Scraper started
+[testUrm] [PROVIDER READY] balad
+[testUrm] [DATA MODE] NORMAL / CONFIGURED PAGES
+[testUrm] [QUERY COUNT] 11
+[testUrm] [QUERY 1/11] فروشگاه الکترونیکی ارومیه آذربایجان
+[testUrm] [SEARCH] فروشگاه الکترونیکی ارومیه آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی ارومیه آذربایجان' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی ارومیه آذربایجان' page=1 count=0
+[testUrm] [QUERY 2/11] فروشگاه الکترونیکی ارومیه
+[testUrm] [SEARCH] فروشگاه الکترونیکی ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی ارومیه' page=1 count=10
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی ارومیه' page=1 count=10
+[testUrm] [QUERY 3/11] فروشگاه الکترونیکی در ارومیه
+[testUrm] [SEARCH] فروشگاه الکترونیکی در ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی در ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی در ارومیه' page=1 count=0
+[testUrm] [QUERY 4/11] فروشگاه الکترونیکی نزدیک ارومیه
+[testUrm] [SEARCH] فروشگاه الکترونیکی نزدیک ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی نزدیک ارومیه' page=1 count=12
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی نزدیک ارومیه' page=1 count=12
+[testUrm] [QUERY 5/11] فروشگاه الکترونیکی اطراف ارومیه
+[testUrm] [SEARCH] فروشگاه الکترونیکی اطراف ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی اطراف ارومیه' page=1 count=0
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی اطراف ارومیه' page=1 count=0
+[testUrm] [QUERY 6/11] فروشگاه الکترونیکی آذربایجان
+[testUrm] [SEARCH] فروشگاه الکترونیکی آذربایجان
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی آذربایجان' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی آذربایجان' page=1 count=11
+[testUrm] [QUERY 7/11] فروشگاه الکترونیکی
+[testUrm] [SEARCH] فروشگاه الکترونیکی
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1
+[testUrm] [RAW RESULTS] query='فروشگاه الکترونیکی' page=1 count=11
+[testUrm] [BUSINESSES] query='فروشگاه الکترونیکی' page=1 count=11
+[testUrm] [QUERY 8/11] فروشگاه الکترونیکی محدوده ارومیه
+[testUrm] [SEARCH] فروشگاه الکترونیکی محدوده ارومیه
+[testUrm] [PAGINATION] mode=NORMAL pages=1
+[testUrm] [PROVIDER] balad page=1

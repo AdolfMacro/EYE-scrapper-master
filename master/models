@@ -1,0 +1,660 @@
+from __future__ import annotations
+
+from dataclasses import dataclass, field
+from enum import Enum
+from typing import Any, Optional
+import time
+
+
+class ScraperStatus(str, Enum):
+    """
+    Lifecycle states of a child scraper.
+
+    The Master process uses these states to describe
+    the logical state of each scraper independently
+    from the underlying multiprocessing.Process.
+    """
+
+    CREATED = "CREATED"
+
+    STARTING = "STARTING"
+
+    RUNNING = "RUNNING"
+
+    STOPPING = "STOPPING"
+
+    STOPPED = "STOPPED"
+
+    FINISHED = "FINISHED"
+
+    CRASHED = "CRASHED"
+
+    KILLED = "KILLED"
+
+
+@dataclass
+class ScraperInfo:
+    """
+    Runtime and configuration model for one scraper.
+
+    ScraperInfo is a pure data model.
+
+    It does NOT:
+        - create processes
+        - start processes
+        - stop processes
+        - execute providers
+        - access the database
+        - perform scraping
+
+    Those responsibilities belong to:
+        - ScraperRegistry
+        - ProcessManager
+        - ScraperProcess
+        - ScraperWorker
+    """
+
+    # ==========================================================
+    # IDENTITY
+    # ==========================================================
+
+    name: str
+
+    # ==========================================================
+    # SCRAPER CONFIGURATION
+    # ==========================================================
+
+    providers: list[str] = field(
+        default_factory=list
+    )
+
+    target: Optional[str] = None
+
+    config: dict[str, Any] = field(
+        default_factory=dict
+    )
+
+    # ==========================================================
+    # RUNTIME FILES
+    # ==========================================================
+
+    database: Optional[str] = None
+
+    log_file: Optional[str] = None
+
+    scraper_dir: Optional[str] = None
+
+    # ==========================================================
+    # PROCESS STATE
+    # ==========================================================
+
+    pid: Optional[int] = None
+
+    status: ScraperStatus = (
+        ScraperStatus.CREATED
+    )
+
+    exit_code: Optional[int] = None
+
+    error: Optional[str] = None
+
+    # ==========================================================
+    # TIMESTAMPS
+    # ==========================================================
+
+    created_at: float = field(
+        default_factory=time.time
+    )
+
+    started_at: Optional[float] = None
+
+    stopped_at: Optional[float] = None
+
+    finished_at: Optional[float] = None
+
+    updated_at: float = field(
+        default_factory=time.time
+    )
+
+    # ==========================================================
+    # NORMALIZATION
+    # ==========================================================
+
+    def __post_init__(self) -> None:
+        """
+        Normalize incoming model values.
+
+        This keeps the model safe even when created from
+        configuration dictionaries or persisted data.
+        """
+
+        self.name = str(
+            self.name
+        ).strip()
+
+        self.providers = [
+            str(provider).strip()
+            for provider in self.providers
+            if str(provider).strip()
+        ]
+
+        if self.target is not None:
+
+            self.target = str(
+                self.target
+            ).strip()
+
+        self.config = dict(
+            self.config or {}
+        )
+
+        if self.database is not None:
+
+            self.database = str(
+                self.database
+            )
+
+        if self.log_file is not None:
+
+            self.log_file = str(
+                self.log_file
+            )
+
+        if self.scraper_dir is not None:
+
+            self.scraper_dir = str(
+                self.scraper_dir
+            )
+
+        self.status = self.normalize_status(
+            self.status
+        )
+
+    # ==========================================================
+    # STATUS NORMALIZATION
+    # ==========================================================
+
+    @staticmethod
+    def normalize_status(
+        status: ScraperStatus | str,
+    ) -> ScraperStatus:
+        """
+        Convert any supported status representation
+        into ScraperStatus.
+        """
+
+        if isinstance(
+            status,
+            ScraperStatus,
+        ):
+
+            return status
+
+        value = str(
+            status
+        ).strip().upper()
+
+        try:
+
+            return ScraperStatus(
+                value
+            )
+
+        except ValueError as exc:
+
+            raise ValueError(
+                f"Invalid scraper status: {status}"
+            ) from exc
+
+    # ==========================================================
+    # STATUS UPDATE
+    # ==========================================================
+
+    def set_status(
+        self,
+        status: ScraperStatus | str,
+        error: Optional[str] = None,
+        exit_code: Optional[int] = None,
+    ) -> None:
+        """
+        Update lifecycle state and related timestamps.
+        """
+
+        normalized_status = (
+            self.normalize_status(
+                status
+            )
+        )
+
+        now = time.time()
+
+        self.status = normalized_status
+
+        self.updated_at = now
+
+        if error is not None:
+
+            self.error = str(
+                error
+            )
+
+        if exit_code is not None:
+
+            self.exit_code = exit_code
+
+        # ------------------------------------------------------
+        # RUNNING
+        # ------------------------------------------------------
+
+        if normalized_status == (
+            ScraperStatus.RUNNING
+        ):
+
+            if self.started_at is None:
+
+                self.started_at = now
+
+        # ------------------------------------------------------
+        # STOPPED / KILLED
+        # ------------------------------------------------------
+
+        elif normalized_status in {
+            ScraperStatus.STOPPED,
+            ScraperStatus.KILLED,
+        }:
+
+            self.stopped_at = now
+
+        # ------------------------------------------------------
+        # FINISHED / CRASHED
+        # ------------------------------------------------------
+
+        elif normalized_status in {
+            ScraperStatus.FINISHED,
+            ScraperStatus.CRASHED,
+        }:
+
+            self.finished_at = now
+
+    # ==========================================================
+    # PROCESS STATE
+    # ==========================================================
+
+    @property
+    def is_running(self) -> bool:
+        """
+        True when the scraper child is actively running.
+        """
+
+        return (
+            self.status
+            == ScraperStatus.RUNNING
+        )
+
+    @property
+    def is_starting(self) -> bool:
+        """
+        True while the child process is starting.
+        """
+
+        return (
+            self.status
+            == ScraperStatus.STARTING
+        )
+
+    @property
+    def is_stopping(self) -> bool:
+        """
+        True while graceful shutdown is in progress.
+        """
+
+        return (
+            self.status
+            == ScraperStatus.STOPPING
+        )
+
+    @property
+    def is_active(self) -> bool:
+        """
+        True when the scraper is considered operationally active.
+        """
+
+        return self.status in {
+            ScraperStatus.CREATED,
+            ScraperStatus.STARTING,
+            ScraperStatus.RUNNING,
+            ScraperStatus.STOPPING,
+        }
+
+    @property
+    def is_finished(self) -> bool:
+        """
+        True when the scraper reached a terminal state.
+        """
+
+        return self.status in {
+            ScraperStatus.STOPPED,
+            ScraperStatus.FINISHED,
+            ScraperStatus.CRASHED,
+            ScraperStatus.KILLED,
+        }
+
+    @property
+    def has_failed(self) -> bool:
+        """
+        True when the scraper terminated because of an error.
+        """
+
+        return (
+            self.status
+            == ScraperStatus.CRASHED
+        )
+
+    @property
+    def has_pid(self) -> bool:
+        """
+        True when a child PID is available.
+        """
+
+        return self.pid is not None
+
+    # ==========================================================
+    # CONFIGURATION SNAPSHOT
+    # ==========================================================
+
+    def configuration(
+        self,
+    ) -> dict[str, Any]:
+        """
+        Return scraper configuration only.
+
+        Runtime state is intentionally excluded.
+        """
+
+        return {
+            "name": self.name,
+
+            "providers": list(
+                self.providers
+            ),
+
+            "target": self.target,
+
+            "config": dict(
+                self.config
+            ),
+
+            "database": self.database,
+
+            "log_file": self.log_file,
+
+            "scraper_dir": self.scraper_dir,
+        }
+
+    # ==========================================================
+    # RUNTIME SNAPSHOT
+    # ==========================================================
+
+    def snapshot(
+        self,
+    ) -> dict[str, Any]:
+        """
+        Return complete serializable runtime state.
+        """
+
+        return self.to_dict()
+
+    # ==========================================================
+    # SERIALIZATION
+    # ==========================================================
+
+    def to_dict(
+        self,
+    ) -> dict[str, Any]:
+        """
+        Convert model into a JSON-compatible dictionary.
+        """
+
+        return {
+            "name": self.name,
+
+            "providers": list(
+                self.providers
+            ),
+
+            "target": self.target,
+
+            "config": dict(
+                self.config
+            ),
+
+            "database": self.database,
+
+            "log_file": self.log_file,
+
+            "scraper_dir": self.scraper_dir,
+
+            "pid": self.pid,
+
+            "status": self.status.value,
+
+            "exit_code": self.exit_code,
+
+            "error": self.error,
+
+            "created_at": self.created_at,
+
+            "started_at": self.started_at,
+
+            "stopped_at": self.stopped_at,
+
+            "finished_at": self.finished_at,
+
+            "updated_at": self.updated_at,
+        }
+
+    # ==========================================================
+    # DESERIALIZATION
+    # ==========================================================
+
+    @classmethod
+    def from_dict(
+        cls,
+        data: dict[str, Any],
+    ) -> "ScraperInfo":
+        """
+        Reconstruct ScraperInfo from persisted data.
+
+        This is primarily used by the registry when loading
+        state from disk.
+        """
+
+        if not isinstance(
+            data,
+            dict,
+        ):
+
+            raise TypeError(
+                "ScraperInfo data must be a dictionary."
+            )
+
+        return cls(
+
+            name=data.get(
+                "name",
+                "",
+            ),
+
+            providers=list(
+                data.get(
+                    "providers",
+                    [],
+                )
+                or []
+            ),
+
+            target=data.get(
+                "target"
+            ),
+
+            config=dict(
+                data.get(
+                    "config",
+                    {},
+                )
+                or {}
+            ),
+
+            database=data.get(
+                "database"
+            ),
+
+            log_file=data.get(
+                "log_file"
+            ),
+
+            scraper_dir=data.get(
+                "scraper_dir"
+            ),
+
+            pid=data.get(
+                "pid"
+            ),
+
+            status=cls.normalize_status(
+                data.get(
+                    "status",
+                    ScraperStatus.CREATED.value,
+                )
+            ),
+
+            exit_code=data.get(
+                "exit_code"
+            ),
+
+            error=data.get(
+                "error"
+            ),
+
+            created_at=float(
+                data.get(
+                    "created_at",
+                    time.time(),
+                )
+            ),
+
+            started_at=cls._optional_float(
+                data.get(
+                    "started_at"
+                )
+            ),
+
+            stopped_at=cls._optional_float(
+                data.get(
+                    "stopped_at"
+                )
+            ),
+
+            finished_at=cls._optional_float(
+                data.get(
+                    "finished_at"
+                )
+            ),
+
+            updated_at=float(
+                data.get(
+                    "updated_at",
+                    time.time(),
+                )
+            ),
+        )
+
+    # ==========================================================
+    # COPY
+    # ==========================================================
+
+    def copy(
+        self,
+    ) -> "ScraperInfo":
+        """
+        Return an independent copy of the model.
+        """
+
+        return ScraperInfo.from_dict(
+            self.to_dict()
+        )
+
+    # ==========================================================
+    # VALIDATION
+    # ==========================================================
+
+    def validate(self) -> None:
+        """
+        Validate the scraper model.
+        """
+
+        if not self.name:
+
+            raise ValueError(
+                "Scraper name cannot be empty."
+            )
+
+        if not self.providers:
+
+            raise ValueError(
+                "At least one provider is required."
+            )
+
+        if any(
+            not provider
+            for provider in self.providers
+        ):
+
+            raise ValueError(
+                "Provider names cannot be empty."
+            )
+
+    # ==========================================================
+    # HELPERS
+    # ==========================================================
+
+    @staticmethod
+    def _optional_float(
+        value: Any,
+    ) -> Optional[float]:
+
+        if value is None:
+            return None
+
+        if value == "":
+            return None
+
+        try:
+
+            return float(
+                value
+            )
+
+        except (
+            TypeError,
+            ValueError,
+        ):
+
+            return None
+
+    # ==========================================================
+    # REPRESENTATION
+    # ==========================================================
+
+    def __repr__(
+        self,
+    ) -> str:
+
+        return (
+            "ScraperInfo("
+            f"name={self.name!r}, "
+            f"status={self.status.value!r}, "
+            f"pid={self.pid!r}, "
+            f"providers={self.providers!r}"
+            ")"
+        )
